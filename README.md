@@ -23,6 +23,8 @@
 
 http://www.polaris-lab.com/（团队大佬们的文章，墙裂推荐）
 
+<https://paper.tuisec.win/>
+
 <http://wiki.ioin.in/>
 
 <https://www.sec-wiki.com/>
@@ -42,10 +44,6 @@ http://www.polaris-lab.com/（团队大佬们的文章，墙裂推荐）
 <http://www.freebuf.com/>
 
 <http://www.4hou.com/>
-
-一些社区：
-
-<http://www.pwnhoo.com/>
 
 博客：
 
