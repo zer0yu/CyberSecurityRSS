@@ -1,13 +1,17 @@
 # CyberSecurityRSS
 网络安全相关的RSS订阅，汇集的是个人一般看的站点，也会不断的补充。附录加一些可能没有rss的站点，但是是本人日常浏览的不错站点，重点拎出来。
 
-## 使用方法1 - Leaf(osx用户)
+## 使用方法1 - Leaf
 
-直接导入提供的CyberSecurityRSS.xml文件即可。
+直接导入提供的CyberSecurityRSS.xml文件即可
 
-## 使用方法2 - inoreader
+![屏幕快照 2019-04-02 下午4.04.14.png](https://i.loli.net/2019/04/02/5ca317954382b.png)
 
+## 使用方法2 - Reeder3
 
+tiny.opml是个人使用的一个精简版本，删除了一些不常看的英文站点，并且进行了分类
+
+![屏幕快照 2019-04-02 下午3.56.04.png](https://i.loli.net/2019/04/02/5ca316d8dd231.png)
 
 ## 使用方法3 - Feedly
 
@@ -19,74 +23,9 @@
 
 ## 附录
 
-站点：
+others.md中是我一般会主动浏览的站点并且一些站点没有提供rss的都写在了里面。
 
-http://www.polaris-lab.com/（团队大佬们的文章，墙裂推荐）
+## 结语
 
-<https://paper.tuisec.win/>
+如果大家还有很棒的站点欢迎提issue
 
-<http://wiki.ioin.in/>
-
-<https://www.sec-wiki.com/>
-
-<https://xianzhi.aliyun.com/>
-
-<https://paper.seebug.org/>
-
-<http://bobao.360.cn/>
-
-<http://secpulse.com/>
-
-<https://bbs.ichunqiu.com/>
-
-<https://www.t00ls.net/>
-
-<http://www.freebuf.com/>
-
-<http://www.4hou.com/>
-
-博客：
-
-<http://idiopathic24.rssing.com/chan-13017459/latest.php>   pentest tools
-
-<https://blog.kenaro.com/>（SharePoint）
-
-<https://labs.mwrinfosecurity.com/blog/>
-
-<https://www.darknet.org.uk/>
-
-<http://jivoi.github.io/>
-
-<http://threat.tevora.com/>
-
-<http://www.netmux.com/#blog>
-
-<https://cybersyndicates.com/>
-
-<http://www.rvrsh3ll.net/blog/>
-
-<https://rastamouse.me/>
-
-<https://blog.zsec.uk/>
-
-<https://stealthsploit.com/>
-
-<https://leonjza.github.io/>
-
-<http://chousensha.github.io/>
-
-<http://bluescreenofjeff.com/>
-
-<https://enigma0x3.net/>
-
-<http://www.wa-attacks.org/>
-
-<https://webstersprodigy.net/>
-
-<https://www.rebootuser.com/>
-
-<https://www.christophertruncer.com/>
-
-<http://www.sixdub.net/>
-
-http://clymb3r.wordpress.com/
