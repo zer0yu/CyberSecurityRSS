@@ -38,6 +38,7 @@
             <outline htmlUrl="https://www.zerodayinitiative.com/advisories/published/" title="Zero Day Initiative Advisories (published)" xmlUrl="http://feed43.com/5146433407638526.xml" type="rss" text="Zero Day Initiative Advisories (published)"/>
             <outline htmlUrl="http://vipread.com" title="信息安全知识库" xmlUrl="http://vipread.com/feed" type="rss" text="信息安全知识库"/>
             <outline title="安全通告" xmlUrl="http://www.huawei.com/cn/rss-feeds/psirt/rss" type="rss" text="安全通告"/>
+            <outline title="跳跳糖 (https://feed43.com/drops.xml)" xmlUrl="https://feed43.com/drops.xml" type="rss" text="跳跳糖 (https://feed43.com/drops.xml)"/>
         </outline>
         <outline text="MobileSecurity" title="MobileSecurity">
             <outline htmlUrl="http://www.idbtool.com/idb/" title="idbtool.com" xmlUrl="http://www.idbtool.com/atom.xml" type="rss" text="idbtool.com"/>
