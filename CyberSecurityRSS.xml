@@ -216,7 +216,6 @@
             <outline htmlUrl="https://etenal.me" title="ETenal" xmlUrl="https://etenal.me/feed" type="rss" text="ETenal"/>
             <outline htmlUrl="http://eternal-todo.com" title="eternal-todo.com" xmlUrl="http://eternal-todo.com/rss.xml" type="rss" text="eternal-todo.com"/>
             <outline htmlUrl="https://blog.exodusintel.com" title="Exodus Intelligence" xmlUrl="https://blog.exodusintel.com/feed/" type="rss" text="Exodus Intelligence"/>
-            <outline htmlUrl="https://blog.exodusintel.com" title="Exodus Intelligence" xmlUrl="http://blog.exodusintel.com/feed/" type="rss" text="Exodus Intelligence"/>
             <outline htmlUrl="https://eyalitkin.wordpress.com" title="Eyal Itkin" xmlUrl="https://eyalitkin.wordpress.com/feed/" type="rss" text="Eyal Itkin"/>
             <outline htmlUrl="http://zhodiac.hispahack.com" title="FermÃ­n J. Serna - Zhodiac - Vast and Infinite Net Dreams..." xmlUrl="http://zhodiac.hispahack.com/rss.php" type="rss" text="FermÃ­n J. Serna - Zhodiac - Vast and Infinite Net Dreams..."/>
             <outline htmlUrl="/" title="Firmy's blog" xmlUrl="https://firmianay.github.io/pages/feed.xml" type="rss" text="Firmy's blog"/>
@@ -226,7 +225,6 @@
             <outline htmlUrl="https://gdtr.wordpress.com" title="GDTR" xmlUrl="http://gdtr.wordpress.com/feed/" type="rss" text="GDTR"/>
             <outline htmlUrl="https://www.gnucitizen.org/feed.xml" title="GNUCITIZEN" xmlUrl="http://feeds.feedburner.com/gnucitizen" type="rss" text="GNUCITIZEN"/>
             <outline htmlUrl="https://www.greyhathacker.net" title="GreyHatHacker.NET" xmlUrl="https://www.greyhathacker.net/?feed=rss2" type="rss" text="GreyHatHacker.NET"/>
-            <outline htmlUrl="http://www.greyhathacker.net" title="GreyHatHacker.NET" xmlUrl="http://www.greyhathacker.net/?feed=rss2" type="rss" text="GreyHatHacker.NET"/>
             <outline htmlUrl="https://guidovranken.com" title="Guido Vranken" xmlUrl="https://guidovranken.wordpress.com/feed/" type="rss" text="Guido Vranken"/>
             <outline htmlUrl="https://gynvael.coldwind.pl/" title="gynvael.coldwind//vx.log (pl)" xmlUrl="http://gynvael.coldwind.pl/rss_pl.php" type="rss" text="gynvael.coldwind//vx.log (pl)"/>
             <outline htmlUrl="http://www.h0wl.pl/" title="h0wl's blog" xmlUrl="http://www.h0wl.pl/feeds/posts/default" type="rss" text="h0wl's blog"/>
@@ -284,7 +282,6 @@
             <outline htmlUrl="http://moyix.blogspot.com/" title="Push the Red Button" xmlUrl="http://moyix.blogspot.com/feeds/posts/default" type="rss" text="Push the Red Button"/>
             <outline htmlUrl="https://pwnaccelerator.github.io/" title="pwnaccelerator BLOG" xmlUrl="https://pwnaccelerator.github.io/feed.xml" type="rss" text="pwnaccelerator BLOG"/>
             <outline htmlUrl="http://pwndizzle.blogspot.com/" title="PwnDizzle" xmlUrl="http://pwndizzle.blogspot.com/feeds/posts/default" type="rss" text="PwnDizzle"/>
-            <outline title="r00tk1t's blog (https://r00tk1ts.github.io/atom.xml)" xmlUrl="https://r00tk1ts.github.io/atom.xml" type="rss" text="r00tk1t's blog (https://r00tk1ts.github.io/atom.xml)"/>
             <outline htmlUrl="https://menschers.com" title="Ran Menscher's Blog" xmlUrl="https://menschers.com/feed/" type="rss" text="Ran Menscher's Blog"/>
             <outline htmlUrl="https://cyseclabs.com/" title="Recent Articles" xmlUrl="https://cyseclabs.com/feed.atom" type="rss" text="Recent Articles"/>
             <outline htmlUrl="https://repret.wordpress.com" title="REP RET" xmlUrl="https://repret.wordpress.com/feed/" type="rss" text="REP RET"/>

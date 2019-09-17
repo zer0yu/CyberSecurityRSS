@@ -23,7 +23,6 @@
 			<outline htmlUrl="http://o0xmuhe.me/" title="o0xmuhe's blog" xmlUrl="https://o0xmuhe.github.io/atom.xml" type="rss" text="o0xmuhe's blog"/>
 			<outline htmlUrl="http://p4nda.top/" title="p4nda's blog" xmlUrl="http://p4nda.top/atom.xml" type="rss" text="p4nda's blog"/>
 			<outline htmlUrl="https://paper.seebug.org/" title="paper - Last paper" xmlUrl="https://paper.seebug.org/rss/" type="rss" text="paper - Last paper"/>
-			<outline title="r00tk1t's blog (https://r00tk1ts.github.io/atom.xml)" xmlUrl="https://r00tk1ts.github.io/atom.xml" type="rss" text="r00tk1t's blog (https://r00tk1ts.github.io/atom.xml)"/>
 			<outline htmlUrl="http://embpgp.github.io/" title="rutk1t0r's blog" xmlUrl="http://www.rutk1t0r.org/atom.xml" type="rss" text="rutk1t0r's blog"/>
 			<outline htmlUrl="http://eternalsakura13.com/" title="Sakuraのblog" xmlUrl="http://eternalsakura13.com/atom.xml" type="rss" text="Sakuraのblog"/>
 			<outline htmlUrl="https://bestwing.me/" title="Swing'Blog 有恨无人省" xmlUrl="http://bestwing.me/atom.xml" type="rss" text="Swing'Blog 有恨无人省"/>
@@ -79,7 +78,7 @@
 			<outline htmlUrl="https://www.tttang.com" title="跳跳糖 - 安全与分享社区" xmlUrl="https://www.tttang.com/rss.xml" type="rss" text="跳跳糖 - 安全与分享社区"/>
 		</outline>
 		<outline text="WebSecurity" title="WebSecurity">
-			<outline htmlUrl="https://0xrick.github.io/" title="0xRick Owned Root !" xmlUrl="https://0xrick.github.io/feed.xml" type="rss" text="0xRick Owned Root !"/>
+			<outline htmlUrl="https://0xrick.github.io/" title="0xRick" xmlUrl="https://0xrick.github.io/feed.xml" type="rss" text="0xRick"/>
 			<outline htmlUrl="http://www.lsafe.org" title="4dmin$5" xmlUrl="http://www.lsafe.org/?feed=rss2" type="rss" text="4dmin$5"/>
 			<outline htmlUrl="http://5alt.me/" title="5alt's Blog" xmlUrl="http://5alt.me/atom.xml" type="rss" text="5alt's Blog"/>
 			<outline title="Altm4nz (https://altman.vip/atom.xml)" xmlUrl="https://altman.vip/atom.xml" type="rss" text="Altm4nz (https://altman.vip/atom.xml)"/>
