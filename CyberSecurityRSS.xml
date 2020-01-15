@@ -515,7 +515,7 @@
             <outline htmlUrl="https://blog.trustlook.com" title="Trustlook" xmlUrl="http://blog.trustlook.com/feed/" type="rss" text="Trustlook"/>
             <outline htmlUrl="https://tsyrklevich.net" title="Vlad Tsyrklevich's blog" xmlUrl="http://tsyrklevich.net/feed.xml" type="rss" text="Vlad Tsyrklevich's blog"/>
             <outline htmlUrl="https://www.vmray.com" title="VMRay" xmlUrl="https://www.vmray.com/feed/" type="rss" text="VMRay"/>
-            <outline htmlUrl="https://vulnsec.com" title="Vulnerable Security" xmlUrl="https://vulnsec.com/feed.xml" type="rss" text="Vulnerable Security"/>
+            <outline htmlUrl="https://vulnsec.com" title="Vulnerable Security" xmlUrl="http://vulnsec.com/feed.xml" type="rss" text="Vulnerable Security"/>
             <outline htmlUrl="http://x9090.blogspot.com/" title="x9090's Blog" xmlUrl="http://x9090.blogspot.com/feeds/posts/default" type="rss" text="x9090's Blog"/>
             <outline htmlUrl="http://blog.sina.com.cn/yukiorange" title="yukiの萌え萌えBlog" xmlUrl="http://blog.sina.com.cn/rss/1874932054.xml" type="rss" text="yukiの萌え萌えBlog"/>
             <outline htmlUrl="https://rh0dev.github.io//" title="ρ" xmlUrl="http://rh0dev.github.io/atom.xml" type="rss" text="ρ"/>
