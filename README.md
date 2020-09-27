@@ -1,5 +1,5 @@
 # CyberSecurityRSS
-简介: 关于网络安全相关的RSS订阅，个人情报来源和日常知识库更新。
+简介: 关于网络安全相关的RSS订阅，个人情报来源和日常知识库更新，其中的RSS订阅源会每2个月进行更新一次
 
 文件说明: 
 
@@ -11,25 +11,29 @@
 
 PS: 如果遇到导入文件格式问题的可以将xml后缀修改为opml后缀，反之也可。
 
-## 使用方法1 - Leaf
+## 使用方法1 - Reeder3/Reeder4 (macOS, IOS的首选)
+
+![屏幕快照 2019-04-02 下午3.56.04.png](https://i.loli.net/2019/04/02/5ca316d8dd231.png)
+
+## 使用方法2 - Leaf
 
 直接导入提供的文件即可
 
 ![屏幕快照 2019-04-02 下午4.04.14.png](https://i.loli.net/2019/04/02/5ca317954382b.png)
 
-## 使用方法2 - Reeder3(macOS, IOS的首选)
-
-![屏幕快照 2019-04-02 下午3.56.04.png](https://i.loli.net/2019/04/02/5ca316d8dd231.png)
-
 ## 使用方法3 - Feedly
 
-这种是网页的形式(当然也有APP)，feedly的免费版本，tiny.opml可以直接导入并够用，但是CyberSecurityRSS.xml版本是会超的。
+这种是网页的形式(当然也有APP)，feedly的免费版本，tiny.opml可以直接导入并够用，但是CyberSecurityRSS.xml版本会超过免费的订阅限制。
 
 ## 使用方法4 - 深蓝阅读
 
 同1
 
 ## 使用方法5 - Feeder(Android推荐使用)
+
+同1
+
+## 使用方法6 - [Zr](https://www.coolapk.com/apk/176794)(Android推荐使用)
 
 同1
 
