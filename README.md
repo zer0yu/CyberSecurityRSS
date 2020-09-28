@@ -37,7 +37,7 @@ Use the same way as Usage 1
 
 Use the same way as Usage 1
 
-## Usage 6 - [Zr](https://www.coolapk.com/apk/176794)(Android推荐使用)
+## Usage 6 - [Zr](https://www.coolapk.com/apk/176794)(Recommended for Android users)
 
 Use the same way as Usage 1
 
