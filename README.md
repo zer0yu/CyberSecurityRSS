@@ -1,47 +1,47 @@
 # CyberSecurityRSS
-简介: 关于网络安全相关的RSS订阅，个人情报来源和日常知识库更新，其中的RSS订阅源会每2个月进行更新一次
+[中文文档](https://github.com/zer0yu/CyberSecurityRSS/blob/master/README.zh-CN.md)
 
-文件说明: 
+Introduction: RSS subscriptions related to cybersecurity, helping to establish personal intelligence sources and daily knowledge base updates.
 
-1. 附录加一些可能没有rss的站点，但是是本人日常浏览的不错站点，重点写出来了。
+The update frequency: every 2 months.
 
-2. tiny.opml是个人速览使用的一个精简版本。
+File description:
 
-3. CyberSecurityRSS.xml是集合了泉哥和rr的一个十分丰富的版本，也分好了类别。
+1. The others.md file adds some sites without rss subscription, but the site content is very good, so list them separately.
 
-PS: 如果遇到导入文件格式问题的可以将xml后缀修改为opml后缀，反之也可。
+2. The tiny.opml file is a streamlined version of the secure RSS subscription for cyberspace.
 
-## 使用方法1 - Reeder3/Reeder4 (macOS, IOS的首选)
+3. The Cyber​​SecurityRSS.xml file is a rich version of cyberspace security RSS subscription, which involves all aspects of cyberspace security.
 
-![屏幕快照 2019-04-02 下午3.56.04.png](https://i.loli.net/2019/04/02/5ca316d8dd231.png)
+PS: If you encounter problems with the format of the imported file, you can modify the xml suffix to opml suffix, or modify the opml suffix to xml suffix.
 
-## 使用方法2 - Leaf
+## Usage 1-Reeder3/Reeder4 (macOS, IOS preferred)
+
+![截屏2020-09-27 下午9.02.50.png](https://i.loli.net/2020/09/28/NKmtPzv368hiYT9.png)
+
+## Usage 2 - Leaf
 
 直接导入提供的文件即可
 
 ![屏幕快照 2019-04-02 下午4.04.14.png](https://i.loli.net/2019/04/02/5ca317954382b.png)
 
-## 使用方法3 - Feedly
+## Usage 3 - Feedly
 
-这种是网页的形式(当然也有APP)，feedly的免费版本，tiny.opml可以直接导入并够用，但是CyberSecurityRSS.xml版本会超过免费的订阅限制。
+Use the same way as Usage 1
 
-## 使用方法4 - 深蓝阅读
+## Usage 4 - 深蓝阅读
 
-同1
+Use the same way as Usage 1
 
-## 使用方法5 - Feeder(Android推荐使用)
+## Usage 5 - Feeder(Android推荐使用)
 
-同1
+Use the same way as Usage 1
 
-## 使用方法6 - [Zr](https://www.coolapk.com/apk/176794)(Android推荐使用)
+## Usage 6 - [Zr](https://www.coolapk.com/apk/176794)(Android推荐使用)
 
-同1
+Use the same way as Usage 1
 
-## 附录
+## Epilogue
 
-others.md中是我一般会主动浏览的站点并且一些站点没有提供rss的都写在了里面。
-
-## 结语
-
-如果大家还有很棒的站点欢迎提issue
+If you find a great site, please submit an issue or pr
 
