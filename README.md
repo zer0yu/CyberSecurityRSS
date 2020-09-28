@@ -29,11 +29,11 @@ PS: If you encounter problems with the format of the imported file, you can modi
 
 Use the same way as Usage 1
 
-## Usage 4 - 深蓝阅读
+## Usage 4 - [BlueReader](https://bluereader.org/)
 
 Use the same way as Usage 1
 
-## Usage 5 - Feeder(Android推荐使用)
+## Usage 5 - Feeder(Recommended for Android users)
 
 Use the same way as Usage 1
 
