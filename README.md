@@ -1,6 +1,8 @@
 # CyberSecurityRSS
 [中文文档](https://github.com/zer0yu/CyberSecurityRSS/blob/master/README.zh-CN.md)
 
+THIS IS VERY USEFULL,and an amazin projects
+
 Introduction: RSS subscriptions related to cybersecurity, helping to establish personal intelligence sources and daily knowledge base updates.
 
 The update frequency: every 2 months.
