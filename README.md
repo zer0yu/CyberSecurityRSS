@@ -21,7 +21,7 @@ PS: If you encounter problems with the format of the imported file, you can modi
 
 ## Usage 2 - Leaf
 
-直接导入提供的文件即可
+Import the file directly to use it.
 
 ![屏幕快照 2019-04-02 下午4.04.14.png](https://i.loli.net/2019/04/02/5ca317954382b.png)
 
