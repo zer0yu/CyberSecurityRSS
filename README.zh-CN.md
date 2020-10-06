@@ -16,25 +16,31 @@ PS: 如果遇到导入文件格式问题的可以将xml后缀修改为opml后缀
 
 ![截屏2020-09-27 下午9.02.50.png](https://i.loli.net/2020/09/28/NKmtPzv368hiYT9.png)
 
-## 使用方法2 - Leaf
+## 使用方法2 - [yarr](https://github.com/nkanaev/yarr) (macOS, Windows, Linux)
+
+![截屏2020-10-06 上午9.56.09.png](https://i.loli.net/2020/10/06/p9udsMkOQmHAtI8.png)
+
+
+
+## 使用方法3 - Leaf
 
 直接导入提供的文件即可
 
 ![屏幕快照 2019-04-02 下午4.04.14.png](https://i.loli.net/2019/04/02/5ca317954382b.png)
 
-## 使用方法3 - Feedly
+## 使用方法4 - Feedly
 
 这种是网页的形式(当然也有APP)，feedly的免费版本，tiny.opml可以直接导入并够用，但是CyberSecurityRSS.xml版本会超过免费的订阅限制。
 
-## 使用方法4 - 深蓝阅读
+## 使用方法5 - 深蓝阅读
 
 同1
 
-## 使用方法5 - Feeder(Android推荐使用)
+## 使用方法6 - Feeder(Android推荐使用)
 
 同1
 
-## 使用方法6 - [Zr](https://www.coolapk.com/apk/176794)(Android推荐使用)
+## 使用方法7 - [Zr](https://www.coolapk.com/apk/176794)(Android推荐使用)
 
 同1
 

@@ -19,25 +19,29 @@ PS: If you encounter problems with the format of the imported file, you can modi
 
 ![截屏2020-09-27 下午9.02.50.png](https://i.loli.net/2020/09/28/NKmtPzv368hiYT9.png)
 
-## Usage 2 - Leaf
+## Usage 2 - [yarr](https://github.com/nkanaev/yarr) (macOS, Windows, Linux)
+
+![截屏2020-10-06 上午9.56.09.png](https://i.loli.net/2020/10/06/p9udsMkOQmHAtI8.png)
+
+## Usage 3 - Leaf
 
 Import the file directly to use it.
 
 ![屏幕快照 2019-04-02 下午4.04.14.png](https://i.loli.net/2019/04/02/5ca317954382b.png)
 
-## Usage 3 - Feedly
+## Usage 4 - Feedly
 
 Use the same way as Usage 1
 
-## Usage 4 - [BlueReader](https://bluereader.org/)
+## Usage 5 - [BlueReader](https://bluereader.org/)
 
 Use the same way as Usage 1
 
-## Usage 5 - Feeder(Recommended for Android users)
+## Usage 6 - Feeder(Recommended for Android users)
 
 Use the same way as Usage 1
 
-## Usage 6 - [Zr](https://www.coolapk.com/apk/176794)(Recommended for Android users)
+## Usage 7 - [Zr](https://www.coolapk.com/apk/176794)(Recommended for Android users)
 
 Use the same way as Usage 1
 
