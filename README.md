@@ -15,7 +15,13 @@ File description:
 
 PS: If you encounter problems with the format of the imported file, you can modify the xml suffix to opml suffix, or modify the opml suffix to xml suffix.
 
+```
+cp CyberSecurityRSS.xml CyberSecurityRSS.opml
+cp tiny.opml tiny.xml
+```
+
 ## Usage 1-Reeder3/Reeder4 (macOS, IOS preferred)
+import OMPL into Reeder `Subcsriptions -> Import from OMPL`
 
 ![截屏2020-09-27 下午9.02.50.png](https://i.loli.net/2020/09/28/NKmtPzv368hiYT9.png)
 
