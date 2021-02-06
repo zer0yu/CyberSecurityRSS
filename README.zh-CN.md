@@ -12,6 +12,11 @@
 
 PS: 如果遇到导入文件格式问题的可以将xml后缀修改为opml后缀，反之也可。
 
+```
+cp CyberSecurityRSS.xml CyberSecurityRSS.opml
+cp tiny.opml tiny.xml
+```
+
 ## 使用方法1 - Reeder3/Reeder4 (macOS, IOS的首选)
 
 ![截屏2020-09-27 下午9.02.50.png](https://i.loli.net/2020/09/28/NKmtPzv368hiYT9.png)
@@ -32,17 +37,21 @@ PS: 如果遇到导入文件格式问题的可以将xml后缀修改为opml后缀
 
 这种是网页的形式(当然也有APP)，feedly的免费版本，tiny.opml可以直接导入并够用，但是CyberSecurityRSS.xml版本会超过免费的订阅限制。
 
-## 使用方法5 - 深蓝阅读
-
-同1
+![截屏2021-02-06 下午7.29.44.png](https://i.loli.net/2021/02/06/X6Jkat3O2YcFPvK.png)
 
 ## 使用方法6 - Feeder(Android推荐使用)
 
 同1
 
-## 使用方法7 - [Zr](https://www.coolapk.com/apk/176794)(Android推荐使用)
+## 使用方法6 - [Zr](https://www.coolapk.com/apk/176794)(Android推荐使用)
 
 同1
+
+## 使用方法7 - [蚁阅](https://rss.anyant.com/)(Web Online)
+
+同1
+
+![截屏2021-02-06 下午7.26.43.png](https://i.loli.net/2021/02/06/HY8UIt153BETxGb.png)
 
 ## 附录
 

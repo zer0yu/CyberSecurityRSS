@@ -37,19 +37,21 @@ Import the file directly to use it.
 
 ## Usage 4 - Feedly
 
-Use the same way as Usage 1
-
-## Usage 5 - [BlueReader](https://bluereader.org/)
-
-Use the same way as Usage 1
+![截屏2021-02-06 下午7.29.44.png](https://i.loli.net/2021/02/06/X6Jkat3O2YcFPvK.png)
 
 ## Usage 6 - Feeder(Recommended for Android users)
 
 Use the same way as Usage 1
 
-## Usage 7 - [Zr](https://www.coolapk.com/apk/176794)(Recommended for Android users)
+## Usage 6 - [Zr](https://www.coolapk.com/apk/176794)(Recommended for Android users)
 
 Use the same way as Usage 1
+
+## Usage 7 - [anyant](https://rss.anyant.com/)(Web Online)
+
+Use the same way as Usage 1
+
+![截屏2021-02-06 下午7.26.43.png](https://i.loli.net/2021/02/06/HY8UIt153BETxGb.png)
 
 ## Epilogue
 
