@@ -51,7 +51,7 @@ Use the same way as Usage 1
 
 Use the same way as Usage 1
 
-![截屏2021-02-06 下午7.26.43.png](https://i.loli.net/2021/02/06/HY8UIt153BETxGb.png)
+![7.png](https://i.loli.net/2021/02/10/pHdIEztoOUeVxv3.png)
 
 ## Epilogue
 
