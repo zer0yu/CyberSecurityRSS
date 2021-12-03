@@ -17,9 +17,9 @@ cp CyberSecurityRSS.xml CyberSecurityRSS.opml
 cp tiny.opml tiny.xml
 ```
 
-## 使用方法1 - Reeder3/Reeder4 (macOS, IOS的首选)
+## 使用方法1 - Reeder5 (macOS, IOS的首选)
 
-![截屏2020-09-27 下午9.02.50.png](https://i.loli.net/2020/09/28/NKmtPzv368hiYT9.png)
+![image.png](https://i.loli.net/2021/12/03/gqE4OoGtCfS762D.png)
 
 ## 使用方法2 - [yarr](https://github.com/nkanaev/yarr) (macOS, Windows, Linux)
 
@@ -57,7 +57,7 @@ cp tiny.opml tiny.xml
 
 others.md中是我一般会主动浏览的站点并且一些站点没有提供rss的都写在了里面。
 
-## 结语
+## 贡献
 
 如果大家还有很棒的站点欢迎提issue
 

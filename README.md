@@ -20,10 +20,10 @@ cp CyberSecurityRSS.xml CyberSecurityRSS.opml
 cp tiny.opml tiny.xml
 ```
 
-## Usage 1-Reeder3/Reeder4 (macOS, IOS preferred)
+## Usage 1-Reeder5 (macOS, IOS preferred)
 import OMPL into Reeder `Subcsriptions -> Import from OMPL`
 
-![截屏2020-09-27 下午9.02.50.png](https://i.loli.net/2020/09/28/NKmtPzv368hiYT9.png)
+![image.png](https://i.loli.net/2021/12/03/gqE4OoGtCfS762D.png)
 
 ## Usage 2 - [yarr](https://github.com/nkanaev/yarr) (macOS, Windows, Linux)
 
@@ -53,7 +53,7 @@ Use the same way as Usage 1
 
 ![7.png](https://i.loli.net/2021/02/10/pHdIEztoOUeVxv3.png)
 
-## Epilogue
+## Contribution
 
 If you find a great site, please submit an issue or pr
 
