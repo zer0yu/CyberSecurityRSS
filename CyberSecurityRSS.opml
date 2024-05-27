@@ -5,7 +5,7 @@
 </head>
 <body>
 <outline title="Crypto" text="Crypto">
-<outline htmlUrl="https://blog.qualys.com" title="Vulnerabilities and Threat Research – Qualys Security Blog" type="rss" text="Vulnerabilities and Threat Research – Qualys Security Blog" xmlUrl="https://community.qualys.com/blogs/securitylabs/feeds/posts" />
+<outline htmlUrl="https://blog.qualys.com" title="Vulnerabilities and Threat Research – Qualys Security Blog" type="rss" text="Vulnerabilities and Threat Research – Qualys Security Blog" xmlUrl="https://blog.qualys.com/feed" />
 <outline text="Dave Conroy" title="Dave Conroy" htmlUrl="https://daveconroy.com" xmlUrl="http://www.daveconroy.com/feed/" type="rss" />
 <outline text="A Few Thoughts on Cryptographic Engineering" type="rss" htmlUrl="https://blog.cryptographyengineering.com" xmlUrl="http://blog.cryptographyengineering.com/feeds/posts/default" title="A Few Thoughts on Cryptographic Engineering" />
 <outline type="rss" xmlUrl="https://rdist.root.org/feed/" text="rdist" title="rdist" htmlUrl="https://rdist.root.org" />
