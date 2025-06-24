@@ -57,3 +57,7 @@ Use the same way as Usage 1
 
 If you find a great site, please submit an issue or pr
 
+## Sponsor
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+
