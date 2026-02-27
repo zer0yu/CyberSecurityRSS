@@ -89,6 +89,33 @@ python3 scripts/opml_sync.py \
   --retries 3
 ```
 
+## 交互式新增 RSS 到 tiny.opml
+
+当你发现新的 RSS 链接时，可以使用下面的脚本：
+
+```bash
+uv run python scripts/add_feed_to_tiny.py
+```
+
+默认行为：
+
+- 启动先执行 `git pull --ff-only`，尽量减少本地与远程分支漂移。
+- 先打印 `tiny.opml` 现有一级分类。
+- 你可以输入分类编号，或直接输入新分类名（不存在会自动创建）。
+- 脚本会抓取 RSS 元信息（标题/站点链接）并追加到 `tiny.opml`。
+
+常用参数：
+
+```bash
+# 非交互模式
+uv run python scripts/add_feed_to_tiny.py \
+  --url "https://example.com/feed.xml" \
+  --category "ThreatIntel"
+
+# 跳过启动时的 git pull
+uv run python scripts/add_feed_to_tiny.py --no-git-pull
+```
+
 ## OPML/XML 兼容说明
 
 部分阅读器仅接受 `.xml` 或 `.opml` 后缀，可直接改名使用：

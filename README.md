@@ -89,6 +89,33 @@ python3 scripts/opml_sync.py \
   --retries 3
 ```
 
+## Add New RSS Into tiny.opml (Interactive)
+
+Use this helper script when you discover a new feed URL:
+
+```bash
+uv run python scripts/add_feed_to_tiny.py
+```
+
+Default behavior:
+
+- Runs `git pull --ff-only` first to reduce local/remote drift before editing.
+- Prints current top-level categories in `tiny.opml`.
+- Lets you select a category by number or type a new name (auto-create).
+- Fetches feed metadata (title/site link) from your RSS URL, then appends it.
+
+Common options:
+
+```bash
+# Non-interactive
+uv run python scripts/add_feed_to_tiny.py \
+  --url "https://example.com/feed.xml" \
+  --category "ThreatIntel"
+
+# Skip startup git pull
+uv run python scripts/add_feed_to_tiny.py --no-git-pull
+```
+
 ## OPML/XML Compatibility
 
 Some readers only accept a specific extension. You can safely rename files:
