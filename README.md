@@ -53,6 +53,17 @@ Use the same way as Usage 1
 
 ![7.png](https://i.loli.net/2021/02/10/pHdIEztoOUeVxv3.png)
 
+## Automation
+
+This repository uses GitHub Actions to keep OPML files healthy and synced:
+
+1. On `pull_request` to `master`, workflow runs in `check` mode and fails when OPML drift is detected.
+2. On `push` to `master`, workflow runs in `apply` mode:
+   - Validate RSS/Atom feed URLs in `tiny.opml` and `CyberSecurityRSS.opml`.
+   - Remove dead feed entries and deduplicate by `xmlUrl`.
+   - Sync valid feeds from `tiny.opml` into `CyberSecurityRSS.opml` (missing categories fall back to `Misc`).
+   - Auto-commit OPML changes with `[skip ci]`.
+
 ## Contribution
 
 If you find a great site, please submit an issue or pr
@@ -60,4 +71,3 @@ If you find a great site, please submit an issue or pr
 ## Sponsor
 
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
-

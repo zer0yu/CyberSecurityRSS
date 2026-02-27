@@ -1,0 +1,76 @@
+name: OPML Sync
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Run OPML check mode
+        run: |
+          python scripts/opml_sync.py \
+            --mode check \
+            --tiny tiny.opml \
+            --full CyberSecurityRSS.opml \
+            --fallback-category Misc \
+            --timeout 10 \
+            --retries 3
+
+  apply:
+    if: github.event_name == 'push' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Run OPML apply mode
+        run: |
+          python scripts/opml_sync.py \
+            --mode apply \
+            --tiny tiny.opml \
+            --full CyberSecurityRSS.opml \
+            --fallback-category Misc \
+            --timeout 10 \
+            --retries 3
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet; then
+            echo "No OPML changes detected."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tiny.opml CyberSecurityRSS.opml
+          git commit -m "chore: auto-clean OPML feeds and sync from tiny [skip ci]"
+          git push

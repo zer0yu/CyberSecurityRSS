@@ -53,6 +53,17 @@ cp tiny.opml tiny.xml
 
 ![7.png](https://i.loli.net/2021/02/10/pHdIEztoOUeVxv3.png)
 
+## 自动化工作流
+
+仓库已配置 GitHub Actions 自动维护 OPML：
+
+1. `pull_request -> master` 触发 `check` 模式，只校验不改文件；如发现需要变更会直接失败。
+2. `push -> master` 触发 `apply` 模式，自动执行：
+   - 校验 `tiny.opml` 与 `CyberSecurityRSS.opml` 的 RSS/Atom 链接可访问性。
+   - 删除失效订阅，并按 `xmlUrl` 自动去重。
+   - 将 `tiny.opml` 中有效且大表缺失的链接同步到 `CyberSecurityRSS.opml`。
+   - 若分类不存在则归入 `Misc`，并自动提交修复结果（commit 含 `[skip ci]`）。
+
 ## 附录
 
 others.md中是我一般会主动浏览的站点并且一些站点没有提供rss的都写在了里面。
@@ -60,4 +71,3 @@ others.md中是我一般会主动浏览的站点并且一些站点没有提供rs
 ## 贡献
 
 如果大家还有很棒的站点欢迎提issue
-
