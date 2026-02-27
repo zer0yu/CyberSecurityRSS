@@ -260,6 +260,7 @@
 <outline title="InfoSec Write-ups - Medium" type="rss" text="InfoSec Write-ups - Medium" htmlUrl="https://infosecwriteups.com?source=rss----7b722bfd1b8d---4" xmlUrl="https://infosecwriteups.com/feed" />
 <outline htmlUrl="https://starlabs.sg" text="Publications on STAR Labs" type="rss" xmlUrl="https://starlabs.sg/publications/index.xml" title="Publications on STAR Labs" />
 <outline text="SecurityWeek" title="SecurityWeek" htmlUrl="https://www.securityweek.com/" type="rss" xmlUrl="https://www.securityweek.com/feed/" />
+<outline type="rss" title="Articles | InfoStealers" text="Articles | InfoStealers" htmlUrl="https://www.infostealers.com/learn-info-stealers/" xmlUrl="https://www.infostealers.com/learn-info-stealers/feed" />
 </outline>
 <outline text="WebSecurity" title="WebSecurity">
 <outline type="rss" title="Hpdoger" htmlUrl="/atom.xml" xmlUrl="https://hpdoger.cn/atom.xml" text="Hpdoger" />
