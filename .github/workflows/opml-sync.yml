@@ -34,7 +34,9 @@ jobs:
             --full CyberSecurityRSS.opml \
             --fallback-category Misc \
             --timeout 10 \
-            --retries 3
+            --retries 3 \
+            --delete-threshold 2 \
+            --state-file .github/opml-health-state.json
 
   apply:
     if: github.event_name == 'push' && github.actor != 'github-actions[bot]'
@@ -61,7 +63,9 @@ jobs:
             --full CyberSecurityRSS.opml \
             --fallback-category Misc \
             --timeout 10 \
-            --retries 3
+            --retries 3 \
+            --delete-threshold 2 \
+            --state-file .github/opml-health-state.json
 
       - name: Commit and push changes
         run: |
@@ -71,6 +75,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tiny.opml CyberSecurityRSS.opml
+          git add tiny.opml CyberSecurityRSS.opml .github/opml-health-state.json
           git commit -m "chore: auto-clean OPML feeds and sync from tiny [skip ci]"
           git push

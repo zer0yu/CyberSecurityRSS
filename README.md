@@ -1,72 +1,110 @@
 # CyberSecurityRSS
-[中文文档](https://github.com/zer0yu/CyberSecurityRSS/blob/master/README.zh-CN.md)
 
-Introduction: RSS subscriptions related to cybersecurity, helping to establish personal intelligence sources and daily knowledge base updates.
+[![Stars](https://img.shields.io/github/stars/zer0yu/CyberSecurityRSS?style=flat-square)](https://github.com/zer0yu/CyberSecurityRSS/stargazers)
+[![Forks](https://img.shields.io/github/forks/zer0yu/CyberSecurityRSS?style=flat-square)](https://github.com/zer0yu/CyberSecurityRSS/network/members)
+[![Last Commit](https://img.shields.io/github/last-commit/zer0yu/CyberSecurityRSS?style=flat-square)](https://github.com/zer0yu/CyberSecurityRSS/commits/master)
+[![OPML Sync](https://img.shields.io/github/actions/workflow/status/zer0yu/CyberSecurityRSS/opml-sync.yml?branch=master&style=flat-square&label=opml-sync)](https://github.com/zer0yu/CyberSecurityRSS/actions/workflows/opml-sync.yml)
 
-The update frequency: every 2 months.
+A curated cybersecurity RSS/Atom OPML collection for building a high-signal daily intelligence workflow.
 
-File description:
+[中文文档](README.zh-CN.md)
 
-1. The others.md file adds some sites without rss subscription, but the site content is very good, so list them separately.
+## Highlights
 
-2. The tiny.opml file is a streamlined version of the secure RSS subscription for cyberspace.
+- Two profiles for different reading budgets:
+  - `tiny.opml`: focused daily reading (currently ~422 feeds / 9 categories)
+  - `CyberSecurityRSS.opml`: broad coverage (currently ~735 feeds / 12 categories)
+- Practical security coverage across vulnerability research, red team, reverse engineering, web security, threat news, and more.
+- Automation-first maintenance: dead feed cleanup, deduplication, and tiny -> full sync.
+- Ready for both manual reading and AI-assisted daily digest pipelines.
 
-3. The Cyber​​SecurityRSS.xml file is a rich version of cyberspace security RSS subscription, which involves all aspects of cyberspace security.
+## Quick Start
 
-PS: If you encounter problems with the format of the imported file, you can modify the xml suffix to opml suffix, or modify the opml suffix to xml suffix.
+1. Choose your feed set:
+   - Low-noise daily reading: `tiny.opml`
+   - Full coverage: `CyberSecurityRSS.opml`
+2. Import the OPML file into your favorite reader.
+3. Start tracking updates as your personal security knowledge base.
 
+### Reader Examples
+
+- Reeder (macOS / iOS)
+- Feedly (Web / iOS / Android)
+- [yarr](https://github.com/nkanaev/yarr) (self-hosted, cross-platform)
+- Feeder / Zr / Anyant / Leaf
+
+## Files
+
+- `tiny.opml`: streamlined high-signal security feed set.
+- `CyberSecurityRSS.opml`: full feed set with wider topic coverage.
+- `others.md`: hand-picked useful sites, including some without RSS.
+
+## AI Daily Digest (OpenClaw / Claude Code)
+
+You can combine this repository with the Skills in [zer0yu/sec-daily-digest](https://github.com/zer0yu/sec-daily-digest) to generate an automated **curated daily cybersecurity digest**.
+
+Recommended workflow:
+
+1. Install sec-daily-digest Skills in OpenClaw or Claude Code (follow that repository's guide).
+2. Use `tiny.opml` as default input (or `CyberSecurityRSS.opml` for broader coverage).
+3. Run once per day (for example, every morning) with a 24-hour time window.
+4. Output a structured report, such as:
+   - Top picks
+   - Vulnerabilities & exploitation
+   - Threat intelligence & incidents
+   - Research / tooling
+   - Actionable takeaways
+
+Prompt example:
+
+```text
+Use CyberSecurityRSS feeds to generate a curated daily security digest for the last 24 hours.
+Keep only high-signal items, group by topic, and include title, why-it-matters, and source URL.
 ```
-cp CyberSecurityRSS.xml CyberSecurityRSS.opml
-cp tiny.opml tiny.xml
-```
 
-## Usage 1-Reeder5 (macOS, IOS preferred)
-import OMPL into Reeder `Subcsriptions -> Import from OMPL`
-
-![image.png](https://i.loli.net/2021/12/03/gqE4OoGtCfS762D.png)
-
-## Usage 2 - [yarr](https://github.com/nkanaev/yarr) (macOS, Windows, Linux)
-
-![截屏2020-10-06 上午9.56.09.png](https://i.loli.net/2020/10/06/p9udsMkOQmHAtI8.png)
-
-## Usage 3 - Leaf
-
-Import the file directly to use it.
-
-![屏幕快照 2019-04-02 下午4.04.14.png](https://i.loli.net/2019/04/02/5ca317954382b.png)
-
-## Usage 4 - Feedly
-
-![截屏2021-02-06 下午7.29.44.png](https://i.loli.net/2021/02/06/X6Jkat3O2YcFPvK.png)
-
-## Usage 6 - Feeder(Recommended for Android users)
-
-Use the same way as Usage 1
-
-## Usage 6 - [Zr](https://www.coolapk.com/apk/176794)(Recommended for Android users)
-
-Use the same way as Usage 1
-
-## Usage 7 - [anyant](https://rss.anyant.com/)(Web Online)
-
-Use the same way as Usage 1
-
-![7.png](https://i.loli.net/2021/02/10/pHdIEztoOUeVxv3.png)
-
-## Automation
+## Repository Automation
 
 This repository uses GitHub Actions to keep OPML files healthy and synced:
 
-1. On `pull_request` to `master`, workflow runs in `check` mode and fails when OPML drift is detected.
-2. On `push` to `master`, workflow runs in `apply` mode:
+1. `pull_request -> master`: runs in `check` mode and fails when OPML drift is detected.
+2. `push -> master`: runs in `apply` mode:
    - Validate RSS/Atom feed URLs in `tiny.opml` and `CyberSecurityRSS.opml`.
    - Remove dead feed entries and deduplicate by `xmlUrl`.
-   - Sync valid feeds from `tiny.opml` into `CyberSecurityRSS.opml` (missing categories fall back to `Misc`).
+   - Sync valid feeds from `tiny.opml` into `CyberSecurityRSS.opml`.
+   - Fallback missing categories to `Misc`.
+   - Keep `.github/opml-health-state.json` and only remove feeds after consecutive hard failures.
    - Auto-commit OPML changes with `[skip ci]`.
 
-## Contribution
+## Local Validation
 
-If you find a great site, please submit an issue or pr
+```bash
+python3 -m unittest discover -s tests -v
+
+python3 scripts/opml_sync.py \
+  --mode check \
+  --tiny tiny.opml \
+  --full CyberSecurityRSS.opml \
+  --fallback-category Misc \
+  --timeout 10 \
+  --retries 3
+```
+
+## OPML/XML Compatibility
+
+Some readers only accept a specific extension. You can safely rename files:
+
+```bash
+cp CyberSecurityRSS.opml CyberSecurityRSS.xml
+cp tiny.opml tiny.xml
+```
+
+## Contributing
+
+Contributions are welcome.
+
+- Submit an Issue or PR for high-quality feeds.
+- Include feed URL, category suggestion, and why it is valuable.
+- Run local checks before opening the PR.
 
 ## Sponsor
 
