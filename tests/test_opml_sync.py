@@ -1,9 +1,10 @@
+import json
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from scripts.opml_sync import run_sync
+from scripts.opml_sync import FeedCheckResult, run_sync
 
 
 def write_file(path: Path, content: str) -> None:
@@ -68,17 +69,22 @@ class OpmlSyncTests(unittest.TestCase):
 </body>
 </opml>
 """
-        alive = {
-            "https://feed-a.example/rss",
-            "https://dev-new.example/rss",
-            "https://fallback.example/rss",
-            "https://dup.example/rss",
-        }
+
+        def checker(url: str) -> FeedCheckResult:
+            if url in {
+                "https://feed-a.example/rss",
+                "https://dev-new.example/rss",
+                "https://fallback.example/rss",
+                "https://dup.example/rss",
+            }:
+                return FeedCheckResult(True, "alive", "ok")
+            return FeedCheckResult(False, "hard_fail", "http_404", 404)
 
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
             tiny = tmp_path / "tiny.opml"
             full = tmp_path / "CyberSecurityRSS.opml"
+            state_file = tmp_path / "state.json"
             write_file(tiny, tiny_content)
             write_file(full, full_content)
 
@@ -90,7 +96,10 @@ class OpmlSyncTests(unittest.TestCase):
                 timeout=10,
                 retries=3,
                 workers=4,
-                checker=lambda url: url in alive,
+                state_file=state_file,
+                delete_threshold=1,
+                max_probe_bytes=128 * 1024,
+                checker=checker,
             )
 
             self.assertTrue(changed)
@@ -99,6 +108,7 @@ class OpmlSyncTests(unittest.TestCase):
             self.assertEqual(stats.duplicates_removed_tiny, 1)
             self.assertEqual(stats.duplicates_removed_full, 1)
             self.assertEqual(stats.merged_added_full, 2)
+            self.assertTrue(state_file.exists())
 
             tiny_urls = parse_category_urls(tiny)
             self.assertEqual(
@@ -138,10 +148,16 @@ class OpmlSyncTests(unittest.TestCase):
 </opml>
 """
 
+        def checker(url: str) -> FeedCheckResult:
+            if url == "https://alive.example/rss":
+                return FeedCheckResult(True, "alive", "ok")
+            return FeedCheckResult(False, "hard_fail", "http_404", 404)
+
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
             tiny = tmp_path / "tiny.opml"
             full = tmp_path / "CyberSecurityRSS.opml"
+            state_file = tmp_path / "state.json"
             write_file(tiny, tiny_content)
             write_file(full, full_content)
             tiny_before = tiny.read_bytes()
@@ -155,21 +171,25 @@ class OpmlSyncTests(unittest.TestCase):
                 timeout=10,
                 retries=3,
                 workers=4,
-                checker=lambda url: url == "https://alive.example/rss",
+                state_file=state_file,
+                delete_threshold=1,
+                max_probe_bytes=128 * 1024,
+                checker=checker,
             )
 
             self.assertTrue(changed)
             self.assertEqual(stats.dead_removed_tiny, 1)
             self.assertEqual(tiny.read_bytes(), tiny_before)
             self.assertEqual(full.read_bytes(), full_before)
+            self.assertFalse(state_file.exists())
 
-    def test_check_mode_no_change_when_already_clean(self):
+    def test_no_immediate_delete_for_hard_fail_when_threshold_is_two(self):
         tiny_content = """<?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
 <head><title>Tiny</title></head>
 <body>
 <outline title="Dev" text="Dev">
-<outline type="rss" text="A" title="A" htmlUrl="https://a.example" xmlUrl="https://a.example/rss" />
+<outline type="rss" text="Dead" title="Dead" htmlUrl="https://dead.example" xmlUrl="https://dead.example/rss" />
 </outline>
 </body>
 </opml>
@@ -179,36 +199,57 @@ class OpmlSyncTests(unittest.TestCase):
 <head><title>CyberSecurityRSS</title></head>
 <body>
 <outline title="Dev" text="Dev">
-<outline type="rss" text="A" title="A" htmlUrl="https://a.example" xmlUrl="https://a.example/rss" />
-</outline>
-<outline title="Misc" text="Misc">
 </outline>
 </body>
 </opml>
 """
 
+        def checker(_url: str) -> FeedCheckResult:
+            return FeedCheckResult(False, "hard_fail", "http_404", 404)
+
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
             tiny = tmp_path / "tiny.opml"
             full = tmp_path / "CyberSecurityRSS.opml"
+            state_file = tmp_path / "state.json"
             write_file(tiny, tiny_content)
             write_file(full, full_content)
 
-            stats, changed = run_sync(
+            first_stats, _ = run_sync(
                 tiny_path=tiny,
                 full_path=full,
-                mode="check",
+                mode="apply",
                 fallback_category="Misc",
                 timeout=10,
                 retries=3,
                 workers=4,
-                checker=lambda url: True,
+                state_file=state_file,
+                delete_threshold=2,
+                max_probe_bytes=128 * 1024,
+                checker=checker,
             )
+            self.assertEqual(first_stats.dead_removed_tiny, 0)
+            self.assertEqual(first_stats.retained_failed_tiny, 1)
+            self.assertIn("https://dead.example/rss", tiny.read_text(encoding="utf-8"))
 
-            self.assertFalse(changed)
-            self.assertEqual(stats.dead_removed_total, 0)
-            self.assertEqual(stats.duplicates_removed_total, 0)
-            self.assertEqual(stats.merged_added_full, 0)
+            second_stats, _ = run_sync(
+                tiny_path=tiny,
+                full_path=full,
+                mode="apply",
+                fallback_category="Misc",
+                timeout=10,
+                retries=3,
+                workers=4,
+                state_file=state_file,
+                delete_threshold=2,
+                max_probe_bytes=128 * 1024,
+                checker=checker,
+            )
+            self.assertEqual(second_stats.dead_removed_tiny, 1)
+            self.assertNotIn("https://dead.example/rss", tiny.read_text(encoding="utf-8"))
+
+            state = json.loads(state_file.read_text(encoding="utf-8"))
+            self.assertIn("urls", state)
 
 
 if __name__ == "__main__":
