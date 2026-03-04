@@ -68,7 +68,7 @@ class AddFeedToTinyTests(unittest.TestCase):
 </opml>
 """
         )
-        added, target = add_feed_to_tree(
+        added, target, was_updated = add_feed_to_tree(
             tree=tree,
             category_name="ThreatIntel",
             metadata=FeedMetadata(
@@ -79,6 +79,7 @@ class AddFeedToTinyTests(unittest.TestCase):
         )
         self.assertTrue(added)
         self.assertEqual(target, "ThreatIntel")
+        self.assertFalse(was_updated)
         self.assertEqual(
             rss_urls_in_category(tree, "ThreatIntel"),
             ["https://ti.example.com/feed.xml"],
@@ -99,7 +100,7 @@ class AddFeedToTinyTests(unittest.TestCase):
 </opml>
 """
         )
-        added, target = add_feed_to_tree(
+        added, target, was_updated = add_feed_to_tree(
             tree=tree,
             category_name="Dev",
             metadata=FeedMetadata(
@@ -110,6 +111,7 @@ class AddFeedToTinyTests(unittest.TestCase):
         )
         self.assertFalse(added)
         self.assertEqual(target, "Dev")
+        self.assertFalse(was_updated)
         self.assertEqual(
             rss_urls_in_category(tree, "Dev"),
             ["https://x.example.com/feed.xml"],

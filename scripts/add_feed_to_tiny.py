@@ -262,7 +262,8 @@ def add_feed_to_tree(
             # Return the existing category name
             if old_parent is body:
                 return False, "(top-level)", False
-            name = category_name(old_parent)
+            # Get category name from the parent element (inline to avoid shadowing)
+            name = (old_parent.attrib.get("title") or old_parent.attrib.get("text") or "").strip()
             return False, name or "(unnamed)", False
 
         # Update the existing feed
