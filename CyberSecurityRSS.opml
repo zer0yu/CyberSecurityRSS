@@ -189,6 +189,10 @@
 <outline text="skyfall.dev" title="skyfall.dev" htmlUrl="https://skyfall.dev" type="rss" xmlUrl="https://skyfall.dev/rss.xml" />
 <outline text="dwarkesh.com" title="dwarkesh.com" htmlUrl="https://dwarkesh.com" type="rss" xmlUrl="https://www.dwarkeshpatel.com/feed" />
 <outline type="rss" title="Articles | InfoStealers" text="Articles | InfoStealers" htmlUrl="https://www.infostealers.com/learn-info-stealers/" xmlUrl="https://www.infostealers.com/learn-info-stealers/feed" />
+<outline type="rss" title="PromptLayer" text="PromptLayer" htmlUrl="https://blog.promptlayer.com/" xmlUrl="https://blog.promptlayer.com/rss/" />
+<outline type="rss" title="LangChain Blog" text="LangChain Blog" htmlUrl="https://blog.langchain.com/" xmlUrl="https://blog.langchain.com/rss/" />
+<outline type="rss" title="Honra.io Insights" text="Honra.io Insights" htmlUrl="https://www.honra.io" xmlUrl="https://www.honra.io/articles/rss.xml" />
+<outline type="rss" title="Emergent Minds | paddo.dev" text="Emergent Minds | paddo.dev" htmlUrl="https://paddo.dev/" xmlUrl="https://paddo.dev/rss.xml" />
 </outline>
 <outline text="MobileSecurity" title="MobileSecurity">
 <outline type="rss" text="SpyLogic.net" xmlUrl="http://feeds.feedburner.com/spylogic" htmlUrl="https://www.spylogic.net" title="SpyLogic.net" />
@@ -293,7 +297,6 @@
 <outline text="OS X and iOS Internals - The RSS Feed" xmlUrl="http://newosxbook.com/index.php?format=rss" htmlUrl="http://www.newosxbook.com/" type="rss" title="OS X and iOS Internals - The RSS Feed" />
 <outline type="rss" title="Copperhead" xmlUrl="https://copperhead.co/rss.xml" htmlUrl="https://copperhead.co" text="Copperhead" />
 <outline htmlUrl="http://mylifewithandroid.blogspot.com/" xmlUrl="http://mylifewithandroid.blogspot.com/feeds/posts/default" type="rss" title="My life with Android :-)" text="My life with Android :-)" />
-<outline xmlUrl="http://blog.scoopz.com/feed/" text="Scoopz.com" type="rss" title="Scoopz.com" htmlUrl="https://blog.scoopz.com/" />
 <outline htmlUrl="https://www.claudxiao.net" title="i, Claud" text="i, Claud" xmlUrl="http://blog.claudxiao.net/feed/" type="rss" />
 <outline type="rss" text="contagio mobile" title="contagio mobile" htmlUrl="http://contagiominidump.blogspot.com/" xmlUrl="http://contagiominidump.blogspot.com/feeds/posts/default" />
 <outline xmlUrl="http://hufeng825.github.io/atom.xml" type="rss" title="阿峰的技术窝窝" text="阿峰的技术窝窝" htmlUrl="http://hufeng825.github.com/atom.xml" />
@@ -305,7 +308,6 @@
 <outline htmlUrl="http://whereisk0shl.top/" xmlUrl="https://whereisk0shl.top/feed" title="WHEREISK0SHL" text="WHEREISK0SHL" type="rss" />
 <outline title="氷 菓" htmlUrl="https://dangokyo.me" xmlUrl="https://dangokyo.me/feed/" text="氷 菓" type="rss" />
 <outline type="rss" title="MWR Labs Tools" xmlUrl="https://feed43.com/6050116603104281.xml" htmlUrl="https://labs.mwrinfosecurity.com/tools/" text="MWR Labs Tools" />
-<outline xmlUrl="http://www.jianfensec.com/feed/" title="JF ' blog" type="rss" htmlUrl="https://jianfensec.com" text="JF ' blog" />
 <outline xmlUrl="http://gdtr.wordpress.com/feed/" title="GDTR" text="GDTR" htmlUrl="https://gdtr.wordpress.com" type="rss" />
 <outline title="CODE WHITE | Blog" htmlUrl="https://codewhitesec.blogspot.com/" text="CODE WHITE | Blog" type="rss" xmlUrl="https://codewhitesec.blogspot.com/feeds/posts/default" />
 <outline xmlUrl="http://poppopret.blogspot.com/feeds/posts/default" htmlUrl="http://poppopret.blogspot.com/" title="Pop Pop Ret" text="Pop Pop Ret" type="rss" />
@@ -454,6 +456,7 @@
 <outline htmlUrl="https://ricercasecurity.blogspot.com/" title="Ricerca Security" text="Ricerca Security" type="rss" xmlUrl="https://ricercasecurity.blogspot.com/feeds/posts/default" />
 <outline xmlUrl="https://noncombatant.org/feed/" type="rss" title="Noncombatant" text="Noncombatant" htmlUrl="https://noncombatant.org/feed/" />
 <outline text="Fuzzing Labs" type="rss" xmlUrl="https://webassembly-security.com/feed/" htmlUrl="https://fuzzinglabs.com" title="Fuzzing Labs" />
+<outline type="rss" title="Mas0n's blog" text="Mas0n's blog" htmlUrl="https://mas0n.org" xmlUrl="https://mas0n.org/feed" />
 </outline>
 <outline text="RedTeam" title="RedTeam">
 <outline xmlUrl="http://exploitspace.blogspot.com/feeds/posts/default" htmlUrl="http://exploitspace.blogspot.com/" text="Deep Exploit Space" title="Deep Exploit Space" type="rss" />

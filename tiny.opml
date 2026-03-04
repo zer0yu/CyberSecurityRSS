@@ -74,7 +74,6 @@
 <outline htmlUrl="https://starlabs.sg/logo-white.png" type="rss" xmlUrl="https://starlabs.sg/blog/index.xml" title="Blogs on STAR Labs" text="Blogs on STAR Labs" />
 <outline text="rutk1t0r's blog" htmlUrl="/embpgp.github.io/atom.xml" xmlUrl="http://www.rutk1t0r.org/atom.xml" title="rutk1t0r's blog" type="rss" />
 <outline text="REDTEAM.PL TECHBLOG" xmlUrl="https://blog.redteam.pl/feeds/posts/default" type="rss" htmlUrl="https://blog.redteam.pl/" title="REDTEAM.PL TECHBLOG" />
-<outline title="JF ' blog" text="JF ' blog" xmlUrl="http://www.jianfensec.com/feed/" type="rss" htmlUrl="https://jianfensec.com" />
 <outline type="rss" xmlUrl="http://feeds.feedburner.com/GynvaelColdwindEN" text="gynvael.coldwind//vx.log (en)" title="gynvael.coldwind//vx.log (en)" htmlUrl="https://gynvael.coldwind.pl/" />
 <outline text="MaskRay" title="MaskRay" type="rss" xmlUrl="https://maskray.me/blog/atom.xml" htmlUrl="https://maskray.me/blog/atom.xml" />
 <outline title="Woosun Song" xmlUrl="https://pr0cf5.github.io/feed.xml" text="Woosun Song" type="rss" htmlUrl="https://pr0cf5.github.io/" />
@@ -452,7 +451,6 @@
 <outline title="darkless" text="darkless" htmlUrl="https://darkless.cn/atom.xml" xmlUrl="https://darkless.cn/atom.xml" type="rss" />
 <outline type="rss" text="bishopfox.com" title="bishopfox.com" htmlUrl="https://bishopfox.com/" xmlUrl="https://labs.bishopfox.com/tech-blog/rss.xml" />
 <outline htmlUrl="https://zonksec.com" type="rss" xmlUrl="https://zonksec.com/home/feed/" title="Comments on: Home" text="Comments on: Home" />
-<outline type="rss" text="R4v3zn's Blog" xmlUrl="http://www.r4v3zn.com/atom.xml" htmlUrl="/atom.xml" title="R4v3zn's Blog" />
 <outline text="Dragon Sector" title="Dragon Sector" type="rss" htmlUrl="https://blog.dragonsector.pl/" xmlUrl="https://blog.dragonsector.pl/feeds/posts/default" />
 <outline type="rss" htmlUrl="https://r2c.dev" xmlUrl="https://r2c.dev/rss.xml" title="r2c website" text="r2c website" />
 <outline xmlUrl="http://www.inbreak.net/feed" htmlUrl="https://www.inbreak.net" type="rss" title="空虚浪子心的灵魂" text="空虚浪子心的灵魂" />
