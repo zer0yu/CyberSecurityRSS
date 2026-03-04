@@ -85,6 +85,7 @@
 <outline text="l1nk3dHouse" htmlUrl="http://showlinkroom.me" title="l1nk3dHouse" xmlUrl="http://showlinkroom.me/atom.xml" type="rss" />
 <outline title="博客园 - hac425" type="rss" text="博客园 - hac425" htmlUrl="https://www.cnblogs.com" xmlUrl="https://www.cnblogs.com/hac425/rss" />
 <outline htmlUrl="https://fuzzing.kr/" xmlUrl="https://fuzzing.kr/feed" text="@l33d0hyun" title="@l33d0hyun" type="rss" />
+<outline type="rss" title="Mas0n's blog" text="Mas0n's blog" htmlUrl="https://mas0n.org" xmlUrl="https://mas0n.org/feed" />
 </outline>
 <outline text="RedTeam" title="RedTeam">
 <outline type="rss" htmlUrl="https://br-sn.github.io/" xmlUrl="https://br-sn.github.io/feed.xml" text="bs" title="bs" />
@@ -606,6 +607,12 @@
 <outline text="mjg59.dreamwidth.org" title="mjg59.dreamwidth.org" htmlUrl="https://mjg59.dreamwidth.org" type="rss" xmlUrl="https://mjg59.dreamwidth.org/data/rss" />
 <outline text="computer.rip" title="computer.rip" htmlUrl="https://computer.rip" type="rss" xmlUrl="https://computer.rip/rss.xml" />
 <outline text="tedunangst.com" title="tedunangst.com" htmlUrl="https://tedunangst.com" type="rss" xmlUrl="https://www.tedunangst.com/flak/rss" />
+<outline type="rss" title="PromptLayer" text="PromptLayer" htmlUrl="https://blog.promptlayer.com/" xmlUrl="https://blog.promptlayer.com/rss/" />
+<outline type="rss" title="Chain Of Thought" text="Chain Of Thought" htmlUrl="https://vrungta.substack.com" xmlUrl="https://vrungta.substack.com/feed" />
+<outline type="rss" title="LangChain Blog" text="LangChain Blog" htmlUrl="https://blog.langchain.com/" xmlUrl="https://blog.langchain.com/rss/" />
+<outline type="rss" title="Honra.io Insights" text="Honra.io Insights" htmlUrl="https://www.honra.io" xmlUrl="https://www.honra.io/articles/rss.xml" />
+<outline type="rss" title="Decision Intelligence" text="Decision Intelligence" htmlUrl="https://decision.substack.com" xmlUrl="https://decision.substack.com/feed" />
+<outline type="rss" title="Emergent Minds | paddo.dev" text="Emergent Minds | paddo.dev" htmlUrl="https://paddo.dev/" xmlUrl="https://paddo.dev/rss.xml" />
 </outline>
 </body>
 </opml>

@@ -223,16 +223,68 @@ def find_existing_category_for_url(body: ET.Element, xml_url: str) -> Optional[s
     return None
 
 
+def find_existing_feed_node(body: ET.Element, xml_url: str) -> Optional[Tuple[ET.Element, ET.Element]]:
+    """Find the existing feed node and its parent for a given XML URL.
+
+    Returns:
+        Tuple of (parent, feed_node) if found, None otherwise.
+    """
+    wanted = normalize_url(xml_url)
+    if not wanted:
+        return None
+    for parent, rss in iter_rss_nodes(body):
+        existing = normalize_url(rss.attrib.get("xmlUrl", ""))
+        if existing == wanted:
+            return (parent, rss)
+    return None
+
+
 def add_feed_to_tree(
     tree: ET.ElementTree,
     category_name: str,
     metadata: FeedMetadata,
-) -> Tuple[bool, str]:
-    body = get_body(tree, Path("tiny.opml"))
-    existing_category = find_existing_category_for_url(body, metadata.xml_url)
-    if existing_category is not None:
-        return False, existing_category
+    update_if_exists: bool = False,
+) -> Tuple[bool, str, bool]:
+    """Add or update a feed in the OPML tree.
 
+    Returns:
+        Tuple of (success, category_name, was_updated).
+        - success: True if feed was added or updated
+        - category_name: The category where the feed is located
+        - was_updated: True if an existing feed was updated, False if newly added
+    """
+    body = get_body(tree, Path("tiny.opml"))
+    existing = find_existing_feed_node(body, metadata.xml_url)
+
+    if existing is not None:
+        old_parent, old_feed = existing
+        if not update_if_exists:
+            # Return the existing category name
+            if old_parent is body:
+                return False, "(top-level)", False
+            name = category_name(old_parent)
+            return False, name or "(unnamed)", False
+
+        # Update the existing feed
+        old_feed.attrib["title"] = metadata.title
+        old_feed.attrib["text"] = metadata.title
+        old_feed.attrib["htmlUrl"] = metadata.html_url
+
+        # Check if we need to move to a different category
+        categories = build_category_map(body)
+        target_name = resolve_category_name(category_name, categories)
+        target = ensure_category(body, categories, target_name)
+
+        if target != old_parent:
+            # Move the feed to the new category
+            old_parent.remove(old_feed)
+            if target.text is None:
+                target.text = "\n"
+            target.append(old_feed)
+
+        return True, target_name, True
+
+    # Add new feed
     categories = build_category_map(body)
     target_name = resolve_category_name(category_name, categories)
     target = ensure_category(body, categories, target_name)
@@ -251,7 +303,7 @@ def add_feed_to_tree(
     if target.text is None:
         target.text = "\n"
     target.append(feed)
-    return True, target_name
+    return True, target_name, False
 
 
 def serialize_tree(tree: ET.ElementTree) -> bytes:
@@ -324,6 +376,11 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser.add_argument("--category", help="Target category; interactive prompt if omitted")
     parser.add_argument("--timeout", type=float, default=12, help="HTTP timeout in seconds")
     parser.add_argument(
+        "--update",
+        action="store_true",
+        help="Update existing feed if URL already exists (title, htmlUrl, and category)",
+    )
+    parser.add_argument(
         "--no-git-pull",
         action="store_true",
         help="Skip the startup git pull --ff-only step",
@@ -368,14 +425,20 @@ def main(argv: Optional[List[str]] = None) -> int:
     categories = list_categories(body)
     chosen_category = (args.category or "").strip() or prompt_for_category(categories)
 
-    added, target_category = add_feed_to_tree(tree, chosen_category, metadata)
+    added, target_category, was_updated = add_feed_to_tree(
+        tree, chosen_category, metadata, update_if_exists=args.update
+    )
     if not added:
         print(f"Feed already exists in category: {target_category}")
         print(f"RSS: {metadata.xml_url}")
+        print("Use --update flag to update the existing feed.")
         return 0
 
     tiny_path.write_bytes(serialize_tree(tree))
-    print("Feed added into tiny.opml successfully:")
+    if was_updated:
+        print("Feed updated in tiny.opml successfully:")
+    else:
+        print("Feed added into tiny.opml successfully:")
     print(f"- Category: {target_category}")
     print(f"- Title: {metadata.title}")
     print(f"- Site: {metadata.html_url}")
