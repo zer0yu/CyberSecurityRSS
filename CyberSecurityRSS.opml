@@ -193,6 +193,9 @@
 <outline type="rss" title="LangChain Blog" text="LangChain Blog" htmlUrl="https://blog.langchain.com/" xmlUrl="https://blog.langchain.com/rss/" />
 <outline type="rss" title="Honra.io Insights" text="Honra.io Insights" htmlUrl="https://www.honra.io" xmlUrl="https://www.honra.io/articles/rss.xml" />
 <outline type="rss" title="Emergent Minds | paddo.dev" text="Emergent Minds | paddo.dev" htmlUrl="https://paddo.dev/" xmlUrl="https://paddo.dev/rss.xml" />
+<outline type="rss" title="Engineering" text="Engineering" htmlUrl="https://www.anthropic.com/engineering/" xmlUrl="https://rss.app/feeds/E5pQ7SXRZQVEiFuh.xml" />
+<outline type="rss" title="博客 · Cursor" text="博客 · Cursor" htmlUrl="https://cursor.com/cn/blog/" xmlUrl="https://rss.app/feeds/gURU8i2ldFzpwRCr.xml" />
+<outline type="rss" title="OpenAI Newsroom | Engineering" text="OpenAI Newsroom | Engineering" htmlUrl="https://openai.com/news/engineering/" xmlUrl="https://rss.app/feeds/75Fpp0Mbx9x4TbDs.xml" />
 </outline>
 <outline text="MobileSecurity" title="MobileSecurity">
 <outline type="rss" text="SpyLogic.net" xmlUrl="http://feeds.feedburner.com/spylogic" htmlUrl="https://www.spylogic.net" title="SpyLogic.net" />
@@ -635,7 +638,6 @@
 <outline xmlUrl="https://blog.recurity-labs.com/atom.xml" title="The Recurity Lablog" type="rss" text="The Recurity Lablog" htmlUrl="http://blog.recurity-labs.com/" />
 <outline text="新浪博客" title="新浪博客" type="rss" xmlUrl="http://blog.sina.com.cn/rss/1998123724.xml" htmlUrl="http://blog.sina.com.cn/" />
 <outline htmlUrl="http://www.brendangregg.com/blog" text="Brendan Gregg's Blog" type="rss" title="Brendan Gregg's Blog" xmlUrl="http://www.brendangregg.com/blog/rss.xml" />
-<outline type="rss" htmlUrl="/atom.xml" xmlUrl="https://jiayu0x.com/atom.xml" title="JiaYu's Blog" text="JiaYu's Blog" />
 <outline text="博客园 - 我是小三" title="博客园 - 我是小三" htmlUrl="http://www.cnblogs.com" type="rss" xmlUrl="http://www.cnblogs.com/2014asm/rss" />
 <outline type="rss" title="Vulnerable Security" htmlUrl="https://vulnsec.com" xmlUrl="http://vulnsec.com/feed.xml" text="Vulnerable Security" />
 <outline text="Quarkslab's blog" title="Quarkslab's blog" xmlUrl="https://blog.quarkslab.com/feeds/all.rss.xml" type="rss" htmlUrl="http://blog.quarkslab.com/" />
