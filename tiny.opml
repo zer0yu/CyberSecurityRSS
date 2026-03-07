@@ -242,7 +242,6 @@
 <outline type="rss" title="Xe Iaso" text="Xe Iaso" htmlUrl="https://xeiaso.net/" xmlUrl="https://xeiaso.net/blog.rss" />
 <outline type="rss" title="lcamtuf (Michal Zalewski)" text="lcamtuf (Michal Zalewski)" htmlUrl="https://lcamtuf.substack.com/" xmlUrl="https://lcamtuf.substack.com/feed" />
 <outline type="rss" title="Dynomight" text="Dynomight" htmlUrl="https://dynomight.net/" xmlUrl="https://dynomight.net/feed.xml" />
-<outline type="rss" title="Armin Ronacher" text="Armin Ronacher" htmlUrl="https://lucumr.pocoo.org/" xmlUrl="https://lucumr.pocoo.org/feed.atom" />
 </outline>
 </body>
 </opml>
