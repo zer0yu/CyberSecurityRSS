@@ -32,7 +32,6 @@
 <outline text="rutk1t0r's blog" htmlUrl="/embpgp.github.io/atom.xml" xmlUrl="http://www.rutk1t0r.org/atom.xml" title="rutk1t0r's blog" type="rss" />
 <outline type="rss" xmlUrl="http://feeds.feedburner.com/GynvaelColdwindEN" text="gynvael.coldwind//vx.log (en)" title="gynvael.coldwind//vx.log (en)" htmlUrl="https://gynvael.coldwind.pl/" />
 <outline text="MaskRay" title="MaskRay" type="rss" xmlUrl="https://maskray.me/blog/atom.xml" htmlUrl="https://maskray.me/blog/atom.xml" />
-<outline text="l1nk3dHouse" htmlUrl="http://showlinkroom.me" title="l1nk3dHouse" xmlUrl="http://showlinkroom.me/atom.xml" type="rss" />
 </outline>
 <outline text="RedTeam" title="RedTeam">
 <outline type="rss" xmlUrl="https://www.darknet.org.uk/feed/" htmlUrl="https://www.darknet.org.uk" title="Darknet – Hacking Tools, Hacker News &amp; Cyber Security" text="Darknet – Hacking Tools, Hacker News &amp; Cyber Security" />
@@ -126,7 +125,6 @@
 <outline type="rss" htmlUrl="https://nobb.site/" title="Hc1m1" xmlUrl="https://nobb.site/rss.xml" text="Hc1m1" />
 <outline type="rss" text="Black Hills Information Security" title="Black Hills Information Security" htmlUrl="https://www.blackhillsinfosec.com/blog/" xmlUrl="https://www.blackhillsinfosec.com/feed/" />
 <outline text="JonLuca’s Blog" type="rss" xmlUrl="https://blog.jonlu.ca/feed.xml" htmlUrl="https://blog.jonlu.ca/" title="JonLuca’s Blog" />
-<outline htmlUrl="https://lfysec.top/atom.xml" text="LFYSec" type="rss" title="LFYSec" xmlUrl="https://lfysec.top/atom.xml" />
 <outline htmlUrl="http://feed.cnblogs.com" type="rss" text="博客园 - admin-神风" title="博客园 - admin-神风" xmlUrl="http://feed.cnblogs.com/blog/u/340041/rss/" />
 <outline title="Blog | Praetorian" htmlUrl="https://www.praetorian.com/blog/" text="Blog | Praetorian" type="rss" xmlUrl="https://www.praetorian.com/blog/feed" />
 <outline text="Stories by Harsh Bothra on Medium" htmlUrl="https://medium.com/@hbothra22?source=rss-54fa249211d2------2" title="Stories by Harsh Bothra on Medium" xmlUrl="https://medium.com/feed/@hbothra22" type="rss" />
@@ -154,6 +152,7 @@
 <outline type="rss" xmlUrl="https://blog.slonser.info/index.xml" htmlUrl="https://blog.slonser.info" text="Slonser Notes" title="Slonser Notes" />
 <outline type="rss" title="Security Engineering Blog" text="Security Engineering Blog" htmlUrl="https://bughunters.google.com/blog" xmlUrl="https://bughunters.google.com/feed/en" />
 <outline type="rss" title="Youssef Sammouda (sam0) personal blog" text="Youssef Sammouda (sam0) personal blog" htmlUrl="http://localhost:4000/" xmlUrl="https://ysamm.com/feed.xml" />
+<outline type="rss" title="SumSec's Blog" text="SumSec's Blog" htmlUrl="https://sumsec.me" xmlUrl="https://sumsec.me/resources/rss.xml" />
 </outline>
 <outline title="AI" text="AI">
 <outline text="krebsonsecurity.com" title="krebsonsecurity.com" htmlUrl="https://krebsonsecurity.com" type="rss" xmlUrl="https://krebsonsecurity.com/feed/" />
@@ -238,7 +237,6 @@
 <outline type="rss" title="IEEE Spectrum" text="IEEE Spectrum" htmlUrl="https://spectrum.ieee.org/" xmlUrl="https://spectrum.ieee.org/feeds/feed.rss" />
 <outline type="rss" title="Ben's Bites" text="Ben's Bites" htmlUrl="https://www.bensbites.com/" xmlUrl="https://www.bensbites.com/feed" />
 <outline type="rss" title="The Decoder" text="The Decoder" htmlUrl="https://the-decoder.com/" xmlUrl="https://the-decoder.com/feed/" />
-<outline type="rss" title="Rachel by the Bay" text="Rachel by the Bay" htmlUrl="https://rachelbythebay.com/" xmlUrl="https://rachelbythebay.com/w/atom.xml" />
 <outline type="rss" title="Xe Iaso" text="Xe Iaso" htmlUrl="https://xeiaso.net/" xmlUrl="https://xeiaso.net/blog.rss" />
 <outline type="rss" title="lcamtuf (Michal Zalewski)" text="lcamtuf (Michal Zalewski)" htmlUrl="https://lcamtuf.substack.com/" xmlUrl="https://lcamtuf.substack.com/feed" />
 <outline type="rss" title="Dynomight" text="Dynomight" htmlUrl="https://dynomight.net/" xmlUrl="https://dynomight.net/feed.xml" />

@@ -7,13 +7,20 @@
 
 A curated cybersecurity RSS/Atom OPML collection for building a high-signal daily intelligence workflow.
 
+This repository provides a high-signal intelligence pipeline based on **Dual Data Sources** (Security RSS + Twitter/X Researchers):
+
+| Tier | Scale | Content |
+|------|-------|---------|
+| 📡 RSS (Tiny) | ~222 Feeds | `tiny.opml` — Focused daily reading including AI, WebSecurity, RedTeam, Reverse, Pwn... (9 categories) |
+| 📡 RSS (Full) | 1000+ Feeds | `CyberSecurityRSS.opml` — Comprehensive coverage across 12 categories |
+
 [中文文档](README.zh-CN.md)
 
 ## Highlights
 
 - Two profiles for different reading budgets:
-  - `tiny.opml`: focused daily reading (currently ~422 feeds / 9 categories)
-  - `CyberSecurityRSS.opml`: broad coverage (currently ~735 feeds / 12 categories)
+  - `tiny.opml`: focused daily reading (currently ~222 feeds / 9 categories)
+  - `CyberSecurityRSS.opml`: broad coverage (currently ~1014 feeds / 12 categories)
 - Practical security coverage across vulnerability research, red team, reverse engineering, web security, threat news, and more.
 - Automation-first maintenance: dead feed cleanup, deduplication, and tiny -> full sync.
 - Ready for both manual reading and AI-assisted daily digest pipelines.
