@@ -1,9 +1,12 @@
 import unittest
 import xml.etree.ElementTree as ET
+from unittest import mock
 
 from scripts.add_feed_to_tiny import (
     FeedMetadata,
+    MAX_FEED_BYTES,
     add_feed_to_tree,
+    fetch_feed_metadata,
     parse_feed_metadata,
 )
 
@@ -28,6 +31,30 @@ def rss_urls_in_category(tree: ET.ElementTree, category_name: str):
                 urls.append(rss.attrib["xmlUrl"])
         return urls
     return []
+
+
+class FakeResponse:
+    def __init__(self, payload: bytes, status: int = 200):
+        self._payload = payload
+        self._offset = 0
+        self.status = status
+
+    def read(self, size: int = -1) -> bytes:
+        if size is None or size < 0:
+            size = len(self._payload) - self._offset
+        start = self._offset
+        end = min(len(self._payload), self._offset + size)
+        self._offset = end
+        return self._payload[start:end]
+
+    def getcode(self) -> int:
+        return self.status
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        return False
 
 
 class AddFeedToTinyTests(unittest.TestCase):
@@ -116,6 +143,32 @@ class AddFeedToTinyTests(unittest.TestCase):
             rss_urls_in_category(tree, "Dev"),
             ["https://x.example.com/feed.xml"],
         )
+
+    def test_fetch_feed_metadata_reads_large_feed_incrementally(self):
+        item = (
+            b"<item><title>Entry</title><link>https://example.com/post</link>"
+            b"<description>" + (b"x" * 16384) + b"</description></item>"
+        )
+        payload = (
+            b"<?xml version='1.0' encoding='UTF-8'?>\n"
+            b"<rss version='2.0'><channel>"
+            b"<title>Large Feed</title>"
+            b"<link>https://example.com</link>"
+            b"<description>Example feed</description>"
+            + (item * 160)
+            + b"</channel></rss>"
+        )
+        self.assertGreater(len(payload), MAX_FEED_BYTES)
+
+        with mock.patch(
+            "scripts.add_feed_to_tiny.urllib.request.urlopen",
+            return_value=FakeResponse(payload),
+        ):
+            meta = fetch_feed_metadata("https://example.com/feed.xml", timeout=5)
+
+        self.assertEqual(meta.title, "Large Feed")
+        self.assertEqual(meta.html_url, "https://example.com")
+        self.assertEqual(meta.xml_url, "https://example.com/feed.xml")
 
 
 if __name__ == "__main__":

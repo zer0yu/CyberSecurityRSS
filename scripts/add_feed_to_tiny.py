@@ -12,7 +12,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import BinaryIO, Dict, Iterable, List, Optional, Tuple
 
 XML_DECLARATION = b'<?xml version="1.0" encoding="UTF-8"?>\n'
 DEFAULT_USER_AGENT = (
@@ -20,6 +20,7 @@ DEFAULT_USER_AGENT = (
     "+https://github.com/zer0yu/CyberSecurityRSS)"
 )
 MAX_FEED_BYTES = 2 * 1024 * 1024
+READ_CHUNK_SIZE = 64 * 1024
 
 
 class OpmlStructureError(ValueError):
@@ -150,6 +151,19 @@ def _extract_atom_html_url(root: ET.Element) -> str:
     return fallback
 
 
+def _build_feed_metadata(root_name: str, title: str, html_url: str, feed_url: str) -> FeedMetadata:
+    if root_name not in {"rss", "feed", "rdf"}:
+        raise ValueError(f"Unsupported feed root tag: {root_name}")
+
+    safe_title = title or urllib.parse.urlparse(feed_url).netloc or feed_url
+    safe_html_url = urllib.parse.urljoin(feed_url, html_url) if html_url else feed_url
+    return FeedMetadata(
+        title=safe_title,
+        html_url=normalize_url(safe_html_url),
+        xml_url=normalize_url(feed_url),
+    )
+
+
 def parse_feed_metadata(xml_bytes: bytes, feed_url: str) -> FeedMetadata:
     try:
         root = ET.fromstring(xml_bytes)
@@ -173,16 +187,98 @@ def parse_feed_metadata(xml_bytes: bytes, feed_url: str) -> FeedMetadata:
         if channel is not None:
             title = _find_text_child(channel, "title")
             html_url = _find_text_child(channel, "link")
-    else:
-        raise ValueError(f"Unsupported feed root tag: {root_name}")
+    return _build_feed_metadata(root_name, title, html_url, feed_url)
 
-    safe_title = title or urllib.parse.urlparse(feed_url).netloc or feed_url
-    safe_html_url = urllib.parse.urljoin(feed_url, html_url) if html_url else feed_url
-    return FeedMetadata(
-        title=safe_title,
-        html_url=normalize_url(safe_html_url),
-        xml_url=normalize_url(feed_url),
-    )
+
+def parse_feed_metadata_stream(
+    stream: BinaryIO,
+    feed_url: str,
+    max_bytes: int = MAX_FEED_BYTES,
+) -> FeedMetadata:
+    parser = ET.XMLPullParser(events=("start", "end"))
+    path: List[str] = []
+    root_name = ""
+    title = ""
+    html_url = ""
+    atom_fallback_html_url = ""
+    bytes_read = 0
+
+    while True:
+        chunk = stream.read(READ_CHUNK_SIZE)
+        if not chunk:
+            break
+        bytes_read += len(chunk)
+        if bytes_read > max_bytes:
+            raise ValueError(f"Feed payload is too large (> {max_bytes} bytes)")
+
+        try:
+            parser.feed(chunk)
+        except ET.ParseError as exc:
+            raise ValueError(f"RSS/Atom XML parse failed: {exc}") from exc
+
+        for event, elem in parser.read_events():
+            local_name = strip_namespace(elem.tag)
+
+            if event == "start":
+                path.append(local_name)
+
+                if len(path) == 1:
+                    root_name = local_name
+                    if root_name not in {"rss", "feed", "rdf"}:
+                        raise ValueError(f"Unsupported feed root tag: {root_name}")
+                elif root_name == "feed" and len(path) == 2:
+                    if local_name == "entry":
+                        return _build_feed_metadata(
+                            root_name,
+                            title,
+                            html_url or atom_fallback_html_url,
+                            feed_url,
+                        )
+                    if local_name == "link":
+                        href = normalize_url(elem.attrib.get("href", ""))
+                        if href:
+                            rel = (elem.attrib.get("rel", "alternate") or "alternate").strip().lower()
+                            if rel in {"alternate", ""}:
+                                html_url = href
+                            elif not atom_fallback_html_url:
+                                atom_fallback_html_url = href
+                            if title and html_url:
+                                return _build_feed_metadata(root_name, title, html_url, feed_url)
+                continue
+
+            if root_name in {"rss", "rdf"}:
+                if len(path) == 3 and path[1] == "channel":
+                    if local_name == "title" and not title:
+                        title = (elem.text or "").strip()
+                    elif local_name == "link" and not html_url:
+                        html_url = (elem.text or "").strip()
+                    if title and html_url:
+                        return _build_feed_metadata(root_name, title, html_url, feed_url)
+                elif path == [root_name, "channel"]:
+                    return _build_feed_metadata(root_name, title, html_url, feed_url)
+            elif root_name == "feed":
+                if path == ["feed", "title"] and not title:
+                    title = (elem.text or "").strip()
+                    if title and html_url:
+                        return _build_feed_metadata(root_name, title, html_url, feed_url)
+                elif path == ["feed"]:
+                    return _build_feed_metadata(
+                        root_name,
+                        title,
+                        html_url or atom_fallback_html_url,
+                        feed_url,
+                    )
+
+            if path:
+                path.pop()
+            elem.clear()
+
+    try:
+        parser.close()
+    except ET.ParseError as exc:
+        raise ValueError(f"RSS/Atom XML parse failed: {exc}") from exc
+
+    return _build_feed_metadata(root_name, title, html_url or atom_fallback_html_url, feed_url)
 
 
 def fetch_feed_metadata(feed_url: str, timeout: float) -> FeedMetadata:
@@ -197,15 +293,11 @@ def fetch_feed_metadata(feed_url: str, timeout: float) -> FeedMetadata:
             status_code = int(status) if status is not None else 0
             if status_code >= 400:
                 raise ValueError(f"Feed request failed with HTTP {status_code}")
-            payload = response.read(MAX_FEED_BYTES + 1)
+            return parse_feed_metadata_stream(response, feed_url=feed_url)
     except urllib.error.HTTPError as exc:
         raise ValueError(f"Feed request failed with HTTP {int(exc.code)}") from exc
     except urllib.error.URLError as exc:
         raise ValueError(f"Feed request failed: {exc.reason}") from exc
-
-    if len(payload) > MAX_FEED_BYTES:
-        raise ValueError(f"Feed payload is too large (> {MAX_FEED_BYTES} bytes)")
-    return parse_feed_metadata(payload, feed_url=feed_url)
 
 
 def find_existing_category_for_url(body: ET.Element, xml_url: str) -> Optional[str]:
