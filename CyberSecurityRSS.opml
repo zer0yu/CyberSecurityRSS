@@ -314,7 +314,6 @@
 <outline type="rss" xmlUrl="https://fuzion24.github.io/feed.xml" title="Out of Bounds Access" htmlUrl="http://fuzion24.github.io/" text="Out of Bounds Access" />
 <outline type="rss" text="NetRoc's blog" xmlUrl="http://blog.dbgtech.net/blog/?feed=rss2" title="NetRoc's blog" htmlUrl="http://blog.dbgtech.net/blog" />
 <outline htmlUrl="https://blog.csdn.net/aomandeshangxiao" type="rss" title="傲慢的上校的专栏" text="傲慢的上校的专栏" xmlUrl="http://blog.csdn.net/aomandeshangxiao/rss/list" />
-<outline xmlUrl="http://blog.csdn.net/jiangwei0910410003/rss/list" text="Android应用安全防护和逆向分析-----作者" type="rss" title="Android应用安全防护和逆向分析-----作者" htmlUrl="https://blog.csdn.net/jiangwei0910410003" />
 <outline htmlUrl="https://forensicsferret.wordpress.com" xmlUrl="http://forensicsferret.wordpress.com/feed/" title="the Forensics Ferret Blog" type="rss" text="the Forensics Ferret Blog" />
 <outline type="rss" htmlUrl="http://feed.cnblogs.com" title="博客园 - __Shadow" xmlUrl="http://feed.cnblogs.com/blog/u/101485/rss" text="博客园 - __Shadow" />
 <outline text="parker的专栏" xmlUrl="http://blog.csdn.net/autohacker/rss/list" htmlUrl="https://blog.csdn.net/autohacker" title="parker的专栏" type="rss" />
@@ -1034,6 +1033,7 @@
 <outline text="ProjectDiscovery.io | Blog" htmlUrl="https://blog.projectdiscovery.io/" type="rss" title="ProjectDiscovery.io | Blog" xmlUrl="https://blog.projectdiscovery.io/rss/" />
 <outline type="rss" title="Security Engineering Blog" text="Security Engineering Blog" htmlUrl="https://bughunters.google.com/blog" xmlUrl="https://bughunters.google.com/feed/en" />
 <outline type="rss" title="Youssef Sammouda (sam0) personal blog" text="Youssef Sammouda (sam0) personal blog" htmlUrl="http://localhost:4000/" xmlUrl="https://ysamm.com/feed.xml" />
+<outline type="rss" title="SumSec's Blog" text="SumSec's Blog" htmlUrl="https://sumsec.me" xmlUrl="https://sumsec.me/resources/rss.xml" />
 </outline>
 <outline title="WirelessSecurity" text="WirelessSecurity">
 <outline type="rss" text="Security Uncorked" xmlUrl="http://securityuncorked.com/feed/" title="Security Uncorked" htmlUrl="https://securityuncorked.com" />
