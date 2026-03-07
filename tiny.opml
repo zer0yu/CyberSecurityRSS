@@ -75,7 +75,6 @@
 <outline title="绿盟科技技术博客" htmlUrl="https://blog.nsfocus.net" type="rss" text="绿盟科技技术博客" xmlUrl="http://blog.nsfocus.net/feed/" />
 <outline type="rss" text="unSafe.sh - 不安全" htmlUrl="https://buaq.net/" xmlUrl="https://buaq.net/rss.xml" title="unSafe.sh - 不安全" />
 <outline title="安全客-有思想的安全新媒体" text="安全客-有思想的安全新媒体" type="rss" xmlUrl="https://api.anquanke.com/data/v1/rss" htmlUrl="https://www.anquanke.com" />
-<outline htmlUrl="https://www.4hou.com" xmlUrl="https://www.4hou.com/feed" text="嘶吼 RoarTalk – 网络安全行业综合服务平台,4hou.com" title="嘶吼 RoarTalk – 网络安全行业综合服务平台,4hou.com" type="rss" />
 <outline type="rss" text="信息安全知识库" title="信息安全知识库" htmlUrl="https://vipread.com" xmlUrl="http://vipread.com/feed" />
 <outline xmlUrl="https://www.microsoft.com/security/blog/feed/" htmlUrl="https://www.microsoft.com/en-us/security/blog/" title="Microsoft Security Blog" type="rss" text="Microsoft Security Blog" />
 <outline type="rss" htmlUrl="https://paper.seebug.org/" xmlUrl="https://paper.seebug.org/rss/" text="paper - Last paper" title="paper - Last paper" />
@@ -219,7 +218,6 @@
 <outline type="rss" title="Paul Graham" text="Paul Graham" htmlUrl="http://www.paulgraham.com/" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" />
 <outline type="rss" title="Geohot" text="Geohot" htmlUrl="https://geohot.github.io/blog/" xmlUrl="https://geohot.github.io/blog/feed.xml" />
 <outline type="rss" title="r/MachineLearning" text="r/MachineLearning" htmlUrl="https://www.reddit.com/r/MachineLearning/" xmlUrl="https://www.reddit.com/r/MachineLearning/.rss" />
-<outline type="rss" title="36氪" text="36氪" htmlUrl="https://36kr.com/" xmlUrl="https://36kr.com/feed" />
 <outline type="rss" title="机器之心 Synced" text="机器之心 Synced" htmlUrl="https://www.jiqizhixin.com/" xmlUrl="https://www.jiqizhixin.com/rss" />
 <outline type="rss" title="量子位 QbitAI" text="量子位 QbitAI" htmlUrl="https://www.qbitai.com/" xmlUrl="https://www.qbitai.com/feed" />
 <outline type="rss" title="MIT Technology Review" text="MIT Technology Review" htmlUrl="https://www.technologyreview.com/" xmlUrl="https://www.technologyreview.com/feed" />
@@ -230,8 +228,6 @@
 <outline type="rss" title="NVIDIA AI Blog" text="NVIDIA AI Blog" htmlUrl="https://blogs.nvidia.com/" xmlUrl="https://blogs.nvidia.com/feed/" />
 <outline type="rss" title="Google DeepMind Blog" text="Google DeepMind Blog" htmlUrl="https://deepmind.google/blog/" xmlUrl="https://deepmind.google/blog/rss.xml" />
 <outline type="rss" title="Product Hunt" text="Product Hunt" htmlUrl="https://www.producthunt.com/" xmlUrl="https://www.producthunt.com/feed" />
-<outline type="rss" title="爱范儿" text="爱范儿" htmlUrl="https://www.ifanr.com/" xmlUrl="https://www.ifanr.com/feed" />
-<outline type="rss" title="少数派" text="少数派" htmlUrl="https://sspai.com/" xmlUrl="https://sspai.com/feed" />
 <outline type="rss" title="Wired" text="Wired" htmlUrl="https://www.wired.com/" xmlUrl="https://www.wired.com/feed/rss" />
 <outline type="rss" title="IEEE Spectrum" text="IEEE Spectrum" htmlUrl="https://spectrum.ieee.org/" xmlUrl="https://spectrum.ieee.org/feeds/feed.rss" />
 <outline type="rss" title="Ben's Bites" text="Ben's Bites" htmlUrl="https://www.bensbites.com/" xmlUrl="https://www.bensbites.com/feed" />
