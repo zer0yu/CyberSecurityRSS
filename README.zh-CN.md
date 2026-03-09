@@ -5,7 +5,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/zer0yu/CyberSecurityRSS?style=flat-square)](https://github.com/zer0yu/CyberSecurityRSS/commits/master)
 [![OPML Sync](https://img.shields.io/github/actions/workflow/status/zer0yu/CyberSecurityRSS/opml-sync.yml?branch=master&style=flat-square&label=opml-sync)](https://github.com/zer0yu/CyberSecurityRSS/actions/workflows/opml-sync.yml)
 
-一个面向实战的网络安全 RSS/Atom OPML 订阅集合，帮助你搭建高信噪比的每日情报输入流。
+一个面向实战的网络安全 + AI RSS/Atom OPML 订阅集合，帮助你搭建高信噪比的每日情报输入流。
 
 [English](README.md)
 
@@ -13,13 +13,13 @@
 
 | 层级 | 规模 | 内容 |
 |------|------|------|
-| 📡 RSS（精简）| ~222 个订阅源 | `tiny.opml` 聚焦实战 — AI、Web安全、红蓝对抗、逆向、Pwn 等（9大分类） |
+| 📡 RSS（精简）| 494 个订阅源 | `tiny.opml` 聚焦实战 — AI、Web安全、红蓝对抗、逆向、Pwn 等（9大分类） |
 | 📡 RSS（完整）| 1000+ 个订阅源 | `CyberSecurityRSS.opml` 全局预警 — 覆盖更多维度如密码学、物联网硬件安全等（12大分类） |
 
 ## 项目亮点
 
 - 双版本订阅集合，覆盖不同阅读精力：
-  - `tiny.opml`：适合日常速览（当前约 222 条订阅 / 9 个分类）
+  - `tiny.opml`：适合日常速览（当前约 494 条订阅 / 9 个分类）
   - `CyberSecurityRSS.opml`：适合全量追踪（当前约 1014 条订阅 / 12 个分类）
 - 覆盖漏洞研究、攻防对抗、逆向分析、Web 安全、情报资讯等核心方向。
 - 自动化维护：失效链接清理、按 `xmlUrl` 去重、`tiny` 自动同步到 `full`。

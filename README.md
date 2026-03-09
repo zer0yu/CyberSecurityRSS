@@ -5,13 +5,13 @@
 [![Last Commit](https://img.shields.io/github/last-commit/zer0yu/CyberSecurityRSS?style=flat-square)](https://github.com/zer0yu/CyberSecurityRSS/commits/master)
 [![OPML Sync](https://img.shields.io/github/actions/workflow/status/zer0yu/CyberSecurityRSS/opml-sync.yml?branch=master&style=flat-square&label=opml-sync)](https://github.com/zer0yu/CyberSecurityRSS/actions/workflows/opml-sync.yml)
 
-A curated cybersecurity RSS/Atom OPML collection for building a high-signal daily intelligence workflow.
+A curated cybersecurity + AI RSS/Atom OPML collection for building a high-signal daily intelligence workflow.
 
 This repository provides a high-signal intelligence pipeline based on **Dual Data Sources** (Security RSS + Twitter/X Researchers):
 
 | Tier | Scale | Content |
 |------|-------|---------|
-| 📡 RSS (Tiny) | ~222 Feeds | `tiny.opml` — Focused daily reading including AI, WebSecurity, RedTeam, Reverse, Pwn... (9 categories) |
+| 📡 RSS (Tiny) | 494 Feeds | `tiny.opml` — Focused daily reading including AI, WebSecurity, RedTeam, Reverse, Pwn... (9 categories) |
 | 📡 RSS (Full) | 1000+ Feeds | `CyberSecurityRSS.opml` — Comprehensive coverage across 12 categories |
 
 [中文文档](README.zh-CN.md)
@@ -19,7 +19,7 @@ This repository provides a high-signal intelligence pipeline based on **Dual Dat
 ## Highlights
 
 - Two profiles for different reading budgets:
-  - `tiny.opml`: focused daily reading (currently ~222 feeds / 9 categories)
+  - `tiny.opml`: focused daily reading (currently 494 feeds / 9 categories)
   - `CyberSecurityRSS.opml`: broad coverage (currently ~1014 feeds / 12 categories)
 - Practical security coverage across vulnerability research, red team, reverse engineering, web security, threat news, and more.
 - Automation-first maintenance: dead feed cleanup, deduplication, and tiny -> full sync.
