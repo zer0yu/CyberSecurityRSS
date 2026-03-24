@@ -96,6 +96,7 @@
     </outline>
     <outline text="Synthesis" title="Synthesis">
       <outline htmlUrl="https://cxsecurity.com/wlb/rss/all/" xmlUrl="https://cxsecurity.com/wlb/rss/all/" title="CXSecurity: World Laboratory of Bugtraq 2" text="CXSecurity: World Laboratory of Bugtraq 2" type="rss" />
+      <outline text="defend.network" title="defend.network" type="rss" xmlUrl="https://defend.network/feed.xml" htmlUrl="https://defend.network" />
       <outline title="绿盟科技技术博客" htmlUrl="https://blog.nsfocus.net" type="rss" text="绿盟科技技术博客" xmlUrl="http://blog.nsfocus.net/feed/" />
       <outline type="rss" text="unSafe.sh - 不安全" htmlUrl="https://buaq.net/" xmlUrl="https://buaq.net/rss.xml" title="unSafe.sh - 不安全" />
       <outline title="安全客-有思想的安全新媒体" text="安全客-有思想的安全新媒体" type="rss" xmlUrl="https://api.anquanke.com/data/v1/rss" htmlUrl="https://www.anquanke.com" />
