@@ -448,7 +448,9 @@
       <outline text="VulDB Recent Entries" title="VulDB Recent Entries" type="rss" xmlUrl="https://vuldb.com/en/?rss.recent" htmlUrl="" />
       <outline text="CERT Recently Published Vulnerability Notes" title="CERT Recently Published Vulnerability Notes" type="rss" xmlUrl="http://www.kb.cert.org/vulfeed" htmlUrl="" />
       <outline text="安全牛" title="安全牛" type="rss" xmlUrl="https://wechat2rss.xlab.app/feed/10f1ba549b70cdb4216f7ade606d30a813305aa1.xml" htmlUrl="" />
-    </outline>
+    <outline text="defend.network" title="defend.network" type="rss" xmlUrl="https://defend.network/feed.xml" htmlUrl="https://defend.network" />
+      <outline text="Seebug漏洞社区" title="Seebug漏洞社区" type="rss" xmlUrl="https://www.seebug.org/rss/new" htmlUrl="https://www.seebug.org/rss/new" />
+      </outline>
 <outline text="MobileSecurity" title="MobileSecurity">
 <outline type="rss" text="SpyLogic.net" xmlUrl="http://feeds.feedburner.com/spylogic" htmlUrl="https://www.spylogic.net" title="SpyLogic.net" />
 <outline text="GeoSn0w" htmlUrl="https://geosn0w.github.io/" type="rss" xmlUrl="https://geosn0w.github.io/feed.xml" title="GeoSn0w" />
@@ -480,7 +482,6 @@
 <outline htmlUrl="http://wangzz.github.io" xmlUrl="http://wangzz.github.io/atom.xml" title="王中周的技术博客" type="rss" text="王中周的技术博客" />
 <outline type="rss" xmlUrl="http://blog.csdn.net/nokiaguy/rss/list" title="一个被知识诅咒的人" htmlUrl="https://blog.csdn.net/nokiaguy" text="一个被知识诅咒的人" />
 <outline type="rss" title="Flanker Sky" htmlUrl="https://blog.flanker017.me" text="Flanker Sky" xmlUrl="http://blog.flanker017.me/?feed=rss2&amp;lang=zh-cn" />
-<outline text="Corelan Cybersecurity Research" htmlUrl="https://www.corelan.be" type="rss" xmlUrl="https://www.corelan.be/index.php/feed/" title="Corelan Cybersecurity Research" />
 <outline text="博客园 - Braincol" xmlUrl="http://feed.cnblogs.com/blog/u/75839/rss" htmlUrl="http://feed.cnblogs.com" title="博客园 - Braincol" type="rss" />
 <outline title="为了工作而工作是悲哀的！工作是实现自我价值的地方！" type="rss" htmlUrl="https://blog.csdn.net/Melody_lu123" text="为了工作而工作是悲哀的！工作是实现自我价值的地方！" xmlUrl="http://blog.csdn.net/Melody_lu123/rss/list" />
 <outline xmlUrl="http://blog.elcomsoft.com/feed/" text="ElcomSoft blog" type="rss" title="ElcomSoft blog" htmlUrl="https://blog.elcomsoft.com" />
