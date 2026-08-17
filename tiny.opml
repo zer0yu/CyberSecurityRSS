@@ -517,5 +517,9 @@
       <outline type="rss" title="Dynomight" text="Dynomight" htmlUrl="https://dynomight.net/" xmlUrl="https://dynomight.net/feed.xml" />
       <outline type="rss" title="Chain Of Thought" text="Chain Of Thought" htmlUrl="https://vrungta.substack.com" xmlUrl="https://vrungta.substack.com/feed" />
     </outline>
+    <outline title="News" text="News">
+      <outline title="ThreatCluster" text="ThreatCluster" type="rss" xmlUrl="https://threatcluster.io/feed.xml" htmlUrl="https://threatcluster.io" />
+      <outline title="ThreatCluster Ransomware" text="ThreatCluster Ransomware" type="rss" xmlUrl="https://threatcluster.io/dark-web/feed.xml" htmlUrl="https://threatcluster.io/dark-web" />
+    </outline>
   </body>
 </opml>
