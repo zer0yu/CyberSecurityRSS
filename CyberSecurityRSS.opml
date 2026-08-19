@@ -920,7 +920,6 @@
 <outline text="cawan's blog" xmlUrl="http://cawanblog.blogspot.com/feeds/posts/default" type="rss" htmlUrl="http://cawanblog.blogspot.com/" title="cawan's blog" />
 <outline xmlUrl="http://fwhacking.blogspot.com/feeds/posts/default" htmlUrl="http://fwhacking.blogspot.com/" type="rss" text="Firmware hacking" title="Firmware hacking" />
 <outline htmlUrl="https://www.evonide.com" type="rss" title="Evonide's Information Security Blog" text="Evonide's Information Security Blog" xmlUrl="https://www.evonide.com/feed/" />
-<outline text="Fun Over IP" htmlUrl="https://funoverip.net" xmlUrl="https://funoverip.net/feed/" type="rss" title="Fun Over IP" />
 <outline title="ly0n.me" htmlUrl="https://ly0n.me/" xmlUrl="http://ly0n.me/feed/" text="ly0n.me" type="rss" />
 <outline type="rss" text="Technical posts Archives - Stormshield" title="Technical posts Archives - Stormshield" htmlUrl="https://www.stormshield.com/category/thisissecurity/feed/" xmlUrl="https://thisissecurity.stormshield.com/feed/" />
 <outline type="rss" title="AVL Team" xmlUrl="http://blog.avlsec.com/feed/" text="AVL Team" htmlUrl="http://blog.avlsec.com" />
@@ -1098,7 +1097,6 @@
 <outline htmlUrl="https://www.agarri.fr/blog" text="Agarri : Sécurité informatique offensive" title="Agarri : Sécurité informatique offensive" type="rss" xmlUrl="http://www.agarri.fr/blog/rss.xml" />
 <outline title="Mozilla Security Blog" text="Mozilla Security Blog" type="rss" htmlUrl="https://blog.mozilla.org/security" xmlUrl="http://blog.mozilla.org/security/feed/" />
 <outline xmlUrl="https://srcincite.io/feed.xml" htmlUrl="https://srcincite.io/" text="Source Incite" title="Source Incite" type="rss" />
-<outline title="Tomato's Blog" text="Tomato's Blog" htmlUrl="http://bl4ck.in/" type="rss" xmlUrl="https://bl4ck.in/feed.xml" />
 <outline title="Adam Shostack &amp; friends" xmlUrl="https://adam.shostack.org/blog/feed/" type="rss" htmlUrl="https://adam.shostack.org/blog" text="Adam Shostack &amp; friends" />
 <outline htmlUrl="https://m4t3sz.gitlab.io/" type="rss" title="M4t35Z's Blog" text="M4t35Z's Blog" xmlUrl="https://m4t3sz.gitlab.io/index.xml" />
 <outline type="rss" htmlUrl="https://yanghaoi.github.io/atom.xml" title="Yang Hao's blog" text="Yang Hao's blog" xmlUrl="https://yanghaoi.github.io/atom.xml" />
