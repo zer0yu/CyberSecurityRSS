@@ -11,6 +11,7 @@
 <outline type="rss" xmlUrl="https://rdist.root.org/feed/" text="rdist" title="rdist" htmlUrl="https://rdist.root.org" />
 <outline type="rss" xmlUrl="http://snowming.me/feed/" text="Snowming04's Blog" title="Snowming04's Blog" htmlUrl="http://snowming.me" />
 <outline title="Vitalik Buterin's website" xmlUrl="https://vitalik.ca/feed.xml" htmlUrl="https://vitalik.ca/" text="Vitalik Buterin's website" type="rss" />
+<outline title="quantakrypto - post-quantum cryptography" text="quantakrypto - post-quantum cryptography" type="rss" xmlUrl="https://quantakrypto.com/rss.xml" htmlUrl="https://quantakrypto.com/blog" />
 </outline>
 <outline text="Dev" title="Dev">
 <outline title="ArthurChiao's Blog" type="rss" htmlUrl="https://arthurchiao.github.io/" text="ArthurChiao's Blog" xmlUrl="http://arthurchiao.art/feed.xml" />
