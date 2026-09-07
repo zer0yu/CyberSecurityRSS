@@ -339,6 +339,8 @@
       <outline text="VulDB Recent Entries" title="VulDB Recent Entries" type="rss" xmlUrl="https://vuldb.com/en/?rss.recent" htmlUrl="" />
       <outline text="CERT Recently Published Vulnerability Notes" title="CERT Recently Published Vulnerability Notes" type="rss" xmlUrl="http://www.kb.cert.org/vulfeed" htmlUrl="" />
       <outline text="安全牛" title="安全牛" type="rss" xmlUrl="https://wechat2rss.xlab.app/feed/10f1ba549b70cdb4216f7ade606d30a813305aa1.xml" htmlUrl="" />
+      <outline title="ThreatCluster" text="ThreatCluster" type="rss" xmlUrl="https://threatcluster.io/feed.xml" htmlUrl="https://threatcluster.io" />
+      <outline title="ThreatCluster Ransomware" text="ThreatCluster Ransomware" type="rss" xmlUrl="https://threatcluster.io/dark-web/feed.xml" htmlUrl="https://threatcluster.io/dark-web" />
     </outline>
     <outline text="WebSecurity" title="WebSecurity">
       <outline xmlUrl="https://portswigger.net/research/rss" text="PortSwigger Research" type="rss" title="PortSwigger Research" htmlUrl="https://portswigger.net/research" />
