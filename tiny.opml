@@ -362,7 +362,6 @@
       <outline htmlUrl="https://drivertom.blogspot.com/" xmlUrl="https://drivertom.blogspot.com/feeds/posts/default?alt=rss" type="rss" text="Driver Tom's Blog" title="Driver Tom's Blog" />
       <outline type="rss" htmlUrl="https://www.zhaoj.in" title="glzjin" xmlUrl="https://www.zhaoj.in/feed" text="glzjin" />
       <outline type="rss" xmlUrl="http://feed.cnblogs.com/blog/u/592290/rss/" text="博客园 - nice_0e3" title="博客园 - nice_0e3" htmlUrl="http://feed.cnblogs.com" />
-      <outline text="Positive Security | IT Security research and happy coincidences" xmlUrl="https://positive.security/blog/rss.xml" htmlUrl="https://positive.security" type="rss" title="Positive Security | IT Security research and happy coincidences" />
       <outline xmlUrl="https://lab.wallarm.com/feed/" title="Wallarm" text="Wallarm" type="rss" htmlUrl="https://lab.wallarm.com/" />
       <outline title="博客园 - 飘渺红尘✨" htmlUrl="http://feed.cnblogs.com" text="博客园 - 飘渺红尘✨" type="rss" xmlUrl="http://feed.cnblogs.com/blog/u/326112/rss/" />
       <outline xmlUrl="https://blog.bushwhackers.ru/rss/" type="rss" text="Bushwhackers’ blog" title="Bushwhackers’ blog" htmlUrl="/" />
@@ -399,7 +398,6 @@
       <outline type="rss" htmlUrl="https://guage.cool/atom.xml" xmlUrl="https://guage.cool/atom.xml" title="半块西瓜皮" text="半块西瓜皮" />
       <outline htmlUrl="https://www.vaadata.com/blog" xmlUrl="https://www.vaadata.com/blog/feed/" title="VAADATA – Ethical Hacking Services" text="VAADATA – Ethical Hacking Services" type="rss" />
       <outline text="DumKiy’s blog" type="rss" xmlUrl="https://dummykitty.github.io/feed.xml" htmlUrl="/" title="DumKiy’s blog" />
-      <outline xmlUrl="https://www.silentrobots.com/rss/" htmlUrl="https://www.silentrobots.com/" text="null" type="rss" title="null" />
       <outline text="Geek Girl" xmlUrl="https://shreyapohekar.com/blogs/feed/" type="rss" htmlUrl="https://shreyapohekar.com/blogs" title="Geek Girl" />
       <outline type="rss" xmlUrl="http://wjlshare.com/feed" htmlUrl="http://wjlshare.com" title="天下大木头" text="天下大木头" />
       <outline xmlUrl="https://rce.moe/atom.xml" type="rss" title="白帽酱の博客" text="白帽酱の博客" htmlUrl="https://rce.moe/atom.xml" />
@@ -480,7 +478,6 @@
       <outline text="miguelgrinberg.com" title="miguelgrinberg.com" htmlUrl="https://miguelgrinberg.com" type="rss" xmlUrl="https://blog.miguelgrinberg.com/feed" />
       <outline text="computer.rip" title="computer.rip" htmlUrl="https://computer.rip" type="rss" xmlUrl="https://computer.rip/rss.xml" />
       <outline type="rss" title="PromptLayer" text="PromptLayer" htmlUrl="https://blog.promptlayer.com/" xmlUrl="https://blog.promptlayer.com/rss/" />
-      <outline type="rss" title="LangChain Blog" text="LangChain Blog" htmlUrl="https://blog.langchain.com/" xmlUrl="https://blog.langchain.com/rss/" />
       <outline type="rss" title="Emergent Minds | paddo.dev" text="Emergent Minds | paddo.dev" htmlUrl="https://paddo.dev/" xmlUrl="https://paddo.dev/rss.xml" />
       <outline type="rss" title="Engineering" text="Engineering" htmlUrl="https://www.anthropic.com/engineering/" xmlUrl="https://rss.app/feeds/E5pQ7SXRZQVEiFuh.xml" />
       <outline type="rss" title="博客 · Cursor" text="博客 · Cursor" htmlUrl="https://cursor.com/cn/blog/" xmlUrl="https://rss.app/feeds/gURU8i2ldFzpwRCr.xml" />
