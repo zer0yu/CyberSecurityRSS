@@ -515,6 +515,7 @@
       <outline type="rss" title="lcamtuf (Michal Zalewski)" text="lcamtuf (Michal Zalewski)" htmlUrl="https://lcamtuf.substack.com/" xmlUrl="https://lcamtuf.substack.com/feed" />
       <outline type="rss" title="Dynomight" text="Dynomight" htmlUrl="https://dynomight.net/" xmlUrl="https://dynomight.net/feed.xml" />
       <outline type="rss" title="Chain Of Thought" text="Chain Of Thought" htmlUrl="https://vrungta.substack.com" xmlUrl="https://vrungta.substack.com/feed" />
-    </outline>
+    <outline type="rss" title="AIHOT 日报" text="AIHOT 日报" htmlUrl="https://aihot.news/daily" xmlUrl="https://aihot.news/feed/daily.xml" />
+</outline>
   </body>
 </opml>
